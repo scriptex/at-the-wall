@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jon-snow-vs-white-walker-cache';
+const CACHE_NAME = 'at-the-wall';
 const urlsToCache = [
 	'/',
 	'/assets/dist/app.css',
