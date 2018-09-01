@@ -11,13 +11,13 @@ function critical_css($path = '/assets/dist/critical.css') {
 ?>
 
 <!DOCTYPE html>
-<html lang="en" manifest="jon-snow-vs-white-walker.appcache">
+<html lang="en" manifest="at-the-wall.appcache">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="A Game of Thrones scene coded in HTML and CSS only" />
 
-	<title>Jon Snow vs. The White Walker</title>
+	<title>At the Wall | A Game of Thrones scene in CSS and HTML</title>
 
 	<!--
 	For more info about the favicons and meta tags below see
@@ -37,7 +37,7 @@ function critical_css($path = '/assets/dist/critical.css') {
 	<link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16" />
 	<link rel="icon" type="image/png" href="assets/images/favicon/favicon-128.png" sizes="128x128" />
 	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon.ico" />
-	<meta name="application-name" content="Jon Snow vs. The White Walker"/>
+	<meta name="application-name" content="At the Wall"/>
 	<meta name="msapplication-TileColor" content="#000000" />
 	<meta name="msapplication-TileImage" content="assets/images/favicon/mstile-144x144.png" />
 	<meta name="msapplication-square70x70logo" content="assets/images/favicon/mstile-70x70.png" />
