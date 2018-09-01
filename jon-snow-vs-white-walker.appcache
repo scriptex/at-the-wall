@@ -1,0 +1,41 @@
+CACHE MANIFEST
+
+CACHE:
+# Offline cache v2
+
+# stylesheets
+index.php
+assets/dist/app.css
+assets/dist/critical.css
+
+# favicons
+assets/images/favicon/apple-touch-icon-57x57.png
+assets/images/favicon/apple-touch-icon-114x114.png
+assets/images/favicon/apple-touch-icon-72x72.png
+assets/images/favicon/apple-touch-icon-144x144.png
+assets/images/favicon/apple-touch-icon-60x60.png
+assets/images/favicon/apple-touch-icon-120x120.png
+assets/images/favicon/apple-touch-icon-76x76.png
+assets/images/favicon/apple-touch-icon-152x152.png
+assets/images/favicon/favicon-196x196.png
+assets/images/favicon/favicon-96x96.png
+assets/images/favicon/favicon-32x32.png
+assets/images/favicon/favicon-16x16.png
+assets/images/favicon/favicon-128.png
+assets/images/favicon/favicon.ico
+assets/images/favicon/mstile-144x144.png
+assets/images/favicon/mstile-70x70.png
+assets/images/favicon/mstile-150x150.png
+assets/images/favicon/mstile-310x150.png
+assets/images/favicon/mstile-310x310.png
+config.xml
+
+# images
+icons/icon-72x72.png
+icons/icon-96x96.png
+icons/icon-128x128.png
+icons/icon-144x144.png
+icons/icon-152x152.png
+icons/icon-192x192.png
+icons/icon-384x384.png
+icons/icon-512x512.png

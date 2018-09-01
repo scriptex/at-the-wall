@@ -1,0 +1,35 @@
+// ----- Snowflakes -----
+
+.snowflake {
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+	transform: translateY(-110vh);
+	animation: snow 30s infinite linear;
+
+	&s {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 9;
+		overflow: hidden;
+		left: 0;
+		top: 0;
+		pointer-events: none;
+	}
+}
+
+@for $i from 1 through 150 {
+	$size: random(100) / 100 + 0.1;
+	$left: random(100) / 100;
+	$top: random(100) / 100;
+	$delay: random(30);
+
+	.snowflake--#{$i} {
+		width: #{$size}vw;
+		height: #{$size}vw;
+		left: percentage($left);
+		top: percentage($top);
+		animation-delay: #{$delay}s;
+	}
+}

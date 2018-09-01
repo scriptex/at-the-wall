@@ -1,0 +1,98 @@
+// ----- Door -----
+
+.door {
+	position: absolute;
+	width: 8.93vw;
+	height: 9.51vw;
+	bottom: 14.23vw;
+	left: 46.32vw;
+	z-index: 6;
+
+	&__part {
+		position: absolute;
+		border-style: solid;
+	}
+
+	&__part--top {
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		border-width: 0 4.43vw 1.32vw 4.43vw;
+		border-color: transparent transparent #ffffff transparent;
+		transform: skewX(-40deg);
+	}
+
+	&__part--left {
+		bottom: -2.07vw;
+		left: 0;
+		width: 1.16vw;
+		height: 8.02vw;
+		width: 0;
+		height: 0;
+		border-width: 4.01vw 1.16vw 4.01vw 0;
+		border-color: transparent #ffffff transparent transparent;
+		transform: skewY(-74deg);
+	}
+
+	&__part--right {
+		bottom: -1.99vw;
+		right: 0;
+		width: 0;
+		height: 0;
+		border-width: 3.93vw 0 3.93vw 1.74vw;
+		border-color: transparent transparent transparent #ffffff;
+		transform: skewY(66deg);
+	}
+
+	&__inner {
+		position: absolute;
+		left: 1.16vw;
+		bottom: 0.17vw;
+		background-color: #fff;
+		width: 6.04vw;
+		height: 8.02vw;
+		background-color: #000;
+	}
+
+	&__trapetz {
+		width: 6.04vw;
+		height: 6.95vw;
+		overflow: hidden;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+
+		.trapetz__part {
+			position: absolute;
+
+			&--background {
+				bottom: 0;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 3.06vw 24.81vw 3.06vw;
+				border-color: transparent transparent #3d6b7a transparent;
+			}
+
+			&--top {
+				bottom: 4.14vw;
+				left: 0.74vw;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 2.32vw 41.36vw 2.32vw;
+				border-color: transparent transparent #558393 transparent;
+			}
+
+			&--bottom {
+				width: 4.63vw;
+				height: 2.32vw;
+				bottom: 1.32vw;
+				left: 0.74vw;
+				background-color: #558393;
+			}
+		}
+	}
+}

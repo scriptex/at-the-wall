@@ -1,0 +1,65 @@
+// ----- Cloud -----
+
+.cloud {
+	border-radius: 4vw;
+	position: absolute;
+	animation: move-clouds infinite 6.5s ease-in-out;
+
+	&--left-top {
+		width: 23vw;
+		height: 8vw;
+		background-color: #e1f4fa;
+		left: 1vw;
+		top: 3vw;
+		z-index: 9990;
+		animation-delay: 0s;
+	}
+
+	&--left-middle {
+		width: 15vw;
+		height: 5vw;
+		background-color: #f5f9fa;
+		left: 10vw;
+		top: 8vw;
+		z-index: 9991;
+		animation-delay: 1.5s;
+	}
+
+	&--left-bottom {
+		width: 8vw;
+		height: 3vw;
+		background-color: #f5f9fa;
+		left: 8vw;
+		top: 12vw;
+		z-index: 9991;
+		animation-delay: 1s;
+	}
+
+	&--right-top {
+		width: 39vw;
+		height: 8vw;
+		background-color: #cdeff9;
+		right: 7vw;
+		top: 0;
+		z-index: 9991;
+		animation-delay: 2s;
+	}
+
+	&--right-bottom {
+		width: 33vw;
+		height: 7vw;
+		background-color: #e1f4fa;
+		right: 2vw;
+		top: 5vw;
+		z-index: 9991;
+		animation-delay: 1s;
+	}
+
+	&s {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 5;
+	}
+}

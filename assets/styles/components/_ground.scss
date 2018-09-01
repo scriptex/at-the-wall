@@ -1,0 +1,64 @@
+// ----- Ground -----
+
+.ground {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+
+	&__part {
+		position: absolute;
+		border-radius: 2.65vw;
+		z-index: 1;
+
+		&--1 {
+			@include create_element_left(1.74vw, 11.33vw, 95.86vw, 4.14vw, $color_light);
+		}
+
+		&--2 {
+			@include create_element_left(0, 10.59vw, 47.56vw, 2.07vw, $color_dark);
+		}
+
+		&--3 {
+			@include create_element_left(7.03vw, 7.28vw, 88.83vw, 3.72vw, $color_light);
+		}
+
+		&--4 {
+			@include create_element_right(0.08vw, 9.84vw, 55.83vw, 2.40vw, $color_grey);
+		}
+
+		&--5 {
+			@include create_element_left(18.20vw, 5.87vw, 73.45vw, 2.98vw, $color_lighter);
+		}
+
+		&--6 {
+			@include create_element_left(1.57vw, 3.97vw, 76.67vw, 3.23vw, $color_light);
+		}
+
+		&--7 {
+			left: 57.57vw;
+			bottom: 0.08vw;
+			width: 22.33vw;
+			height: 1.99vw;
+			background-color: $color_light;
+			border-radius: 0.58vw;
+		}
+
+		&--8 {
+			left: 17.04vw;
+			bottom: 1.57vw;
+			width: 69.98vw;
+			height: 2.98vw;
+			background-color: $color_dark;
+		}
+
+		&--9 {
+			left: 11.17vw;
+			bottom: 0.66vw;
+			width: 47.48vw;
+			height: 1.99vw;
+			background-color: $color_grey;
+		}
+	}
+}

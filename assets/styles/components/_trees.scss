@@ -1,0 +1,224 @@
+// ----- Trees -----
+
+.trees {
+	position: absolute;
+	bottom: 12.98593879239041vw;
+	z-index: 4;
+
+	&--left {
+		left: 4.37vw;
+		width: 11.66vw;
+		height: 9.14vw;
+
+		.tree-medium {
+			position: absolute;
+			top: 0.97vw;
+			left: 0;
+			width: 5.73vw;
+			height: 6.8vw;
+
+			.tree__top {
+				position: absolute;
+				top: 0;
+				left: 1.17vw;
+				width: 0;
+				height: 0;
+				border-left: 1.75vw solid transparent;
+				border-bottom: 2.82vw solid #3e7a78;
+				border-right: 1.75vw solid transparent;
+			}
+
+			.tree__middle {
+				position: absolute;
+				top: 1.17vw;
+				left: 0.68vw;
+				width: 0;
+				height: 0;
+				border-left: 2.33vw solid transparent;
+				border-bottom: 3.6vw solid #3e7a78;
+				border-right: 2.33vw solid transparent;
+			}
+
+			.tree__bottom {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-left: 3.01vw solid transparent;
+				border-bottom: 3.89vw solid #3e7a78;
+				border-right: 3.01vw solid transparent;
+			}
+		}
+
+		.tree-large {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 7.77vw;
+			height: 9.04vw;
+
+			.tree__top {
+				position: absolute;
+				top: 0;
+				left: 1.55vw;
+				width: 0;
+				height: 0;
+				border-left: 2.43vw solid transparent;
+				border-bottom: 3.6vw solid #3e7a78;
+				border-right: 2.43vw solid transparent;
+			}
+
+			.tree__middle {
+				position: absolute;
+				top: 1.94vw;
+				left: 0.58vw;
+				width: 0;
+				height: 0;
+				border-left: 3.3vw solid transparent;
+				border-bottom: 4.37vw solid #3e7a78;
+				border-right: 3.3vw solid transparent;
+			}
+
+			.tree__bottom {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-left: 3.89vw solid transparent;
+				border-bottom: 5.54vw solid #3e7a78;
+				border-right: 3.89vw solid transparent;
+			}
+		}
+	}
+
+	&--right {
+		right: 3.89vw;
+		width: 15.06vw;
+		height: 9.04vw;
+
+		.tree-small {
+			position: absolute;
+			top: 2.92vw;
+			left: 0;
+			width: 3.3vw;
+			height: 5.44vw;
+
+			.tree__top {
+				position: absolute;
+				top: 0;
+				left: 0.58vw;
+				width: 0;
+				height: 0;
+				border-left: 1.07vw solid transparent;
+				border-bottom: 2.14vw solid #3e7a78;
+				border-right: 1.07vw solid transparent;
+			}
+
+			.tree__middle {
+				position: absolute;
+				top: 1.26vw;
+				left: 0.29vw;
+				width: 0;
+				height: 0;
+				border-left: 1.36vw solid transparent;
+				border-bottom: 2.53vw solid #3e7a78;
+				border-right: 1.36vw solid transparent;
+			}
+
+			.tree__bottom {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-left: 1.65vw solid transparent;
+				border-bottom: 3.4vw solid #3e7a78;
+				border-right: 1.65vw solid transparent;
+			}
+		}
+
+		.tree-large {
+			position: absolute;
+			top: 0;
+			left: 4.37vw;
+			width: 7.77vw;
+			height: 9.04vw;
+
+			.tree__top {
+				position: absolute;
+				top: 0;
+				left: 1.55vw;
+				width: 0;
+				height: 0;
+				border-left: 2.43vw solid transparent;
+				border-bottom: 3.6vw solid #3e7a78;
+				border-right: 2.43vw solid transparent;
+			}
+
+			.tree__middle {
+				position: absolute;
+				top: 1.75vw;
+				left: 0.68vw;
+				width: 0;
+				height: 0;
+				border-left: 3.21vw solid transparent;
+				border-bottom: 4.37vw solid #3e7a78;
+				border-right: 3.21vw solid transparent;
+			}
+
+			.tree__bottom {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-left: 3.89vw solid transparent;
+				border-bottom: 5.54vw solid #3e7a78;
+				border-right: 3.89vw solid transparent;
+			}
+		}
+
+		.tree-medium {
+			position: absolute;
+			top: 0.87vw;
+			right: 0;
+			width: 5.83vw;
+			height: 7vw;
+
+			.tree__top {
+				position: absolute;
+				top: 0;
+				left: 1.17vw;
+				width: 0;
+				height: 0;
+				border-left: 1.85vw solid transparent;
+				border-bottom: 2.82vw solid #3e7a78;
+				border-right: 1.85vw solid transparent;
+			}
+
+			.tree__middle {
+				position: absolute;
+				top: 0.97vw;
+				left: 0.58vw;
+				width: 0;
+				height: 0;
+				border-left: 2.43vw solid transparent;
+				border-bottom: 3.69vw solid #3e7a78;
+				border-right: 2.43vw solid transparent;
+			}
+
+			.tree__bottom {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-left: 2.92vw solid transparent;
+				border-bottom: 5.54vw solid #3e7a78;
+				border-right: 2.92vw solid transparent;
+			}
+		}
+	}
+}

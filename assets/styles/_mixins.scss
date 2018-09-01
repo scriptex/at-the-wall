@@ -1,0 +1,17 @@
+// ----- Mixins -----
+
+@mixin create_element_left($left,$bottom,$width,$height,$background_color) {
+	left: $left;
+	bottom: $bottom;
+	width: $width;
+	height: $height;
+	background-color: $background_color;
+}
+
+@mixin create_element_right($right,$bottom,$width,$height,$background_color) {
+	right: $right;
+	bottom: $bottom;
+	width: $width;
+	height: $height;
+	background-color: $background_color;
+}

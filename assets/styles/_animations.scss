@@ -1,0 +1,141 @@
+// ----- Keyframes -----
+
+@keyframes move-clouds {
+	0% {
+		transform: translateX(0);
+	}
+
+	33% {
+		transform: translateX(10px);
+	}
+
+	66% {
+		transform: translateX(-10px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes snow {
+	0% {
+		transform: translateY(-100vh);
+	}
+
+	100% {
+		transform: translateY(100vh);
+	}
+}
+
+@keyframes jon-fight {
+	0%,
+	100% {
+		transform: rotate(0deg) translate(0vw, 0vw);
+	}
+
+	50% {
+		transform: rotate(-15deg) translate(2vw, -0.5vw);
+	}
+}
+
+@keyframes move-jon-hand {
+	0%,
+	100% {
+		transform: rotate(38deg) translate(0vw, 0vw);
+	}
+
+	50% {
+		transform: rotate(23deg) translate(3vw, -1.5vw);
+	}
+}
+
+@keyframes walker-fight {
+	0%,
+	100% {
+		transform: rotate(0deg) translate(0vw, 0vw);
+	}
+
+	50% {
+		transform: rotate(15deg) translate(-3vw, -2vw);
+	}
+}
+
+@keyframes move-walker-hand {
+	0%,
+	100% {
+		transform: rotate(50deg) translate(0vw, 0vw);
+	}
+
+	50% {
+		transform: rotate(25deg) translate(0.5vw, -1vw);
+	}
+}
+
+@keyframes jon-watch {
+	0%,
+	25%,
+	100% {
+		transform: translate(0vw, 0vw) scale(1);
+	}
+
+	10%,
+	15% {
+		transform: translate(0.4vw, 0vw) scale(0.75);
+	}
+}
+
+@keyframes walker-watch {
+	0%,
+	50%,
+	100% {
+		transform: translate(-50%, -50%);
+	}
+
+	30%,
+	40% {
+		transform: translate(-80%, -30%);
+	}
+}
+
+@keyframes blink {
+	0%,
+	29%,
+	33%,
+	100% {
+		transform: scaleY(0);
+	}
+
+	30%,
+	32% {
+		transform: scaleY(1);
+	}
+}
+
+@keyframes move-eyebrow {
+	0%,
+	39%,
+	60%,
+	100% {
+		transform: rotate(-9deg) translateY(0%);
+	}
+
+	40%,
+	59% {
+		transform: rotate(-11deg) translateY(-0.4vw);
+	}
+}
+
+@keyframes move-ears {
+	0%,
+	39%,
+	60%,
+	100% {
+		transform: rotateY(0deg) translateY(-50%) perspective(0vw);
+	}
+
+	40%,
+	59% {
+		transform: rotateY(-50deg) translateY(-50%) perspective(10vw);
+	}
+}
