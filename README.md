@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/scriptex/at-the-wall.svg?branch=master)](https://travis-ci.org/scriptex/at-the-wall)
+[![Build Status](https://travis-ci.org/scriptex/at-the-wall.svg?branch=master)](https://travis-ci.org/scriptex/at-the-wall) [![Greenkeeper badge](https://badges.greenkeeper.io/scriptex/at-the-wall.svg)](https://greenkeeper.io/)
 
 # At the Wall
 
