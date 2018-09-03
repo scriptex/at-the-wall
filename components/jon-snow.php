@@ -1,50 +1,10 @@
 <div class="jon">
 	<div class="jon__hair-back">
-		<ul>
-			<li></li>
-
-			<li></li>
-
-			<li></li>
-
-			<li></li>
-
-			<li></li>
-		</ul>
+		<ul><?php print_list_items(5); ?></ul>
 	</div><!-- /.jon__hair-back -->
 
 	<div class="jon__hair">
-		<ul>
-			<li></li>
-
-			<li></li>
-
-			<li></li>
-
-			<li></li>
-
-			<li></li>
-
-			<li></li>
-
-			<li></li>
-
-			<li></li>
-
-			<li></li>
-
-			<li></li>
-
-			<li></li>
-
-			<li></li>
-
-			<li></li>
-
-			<li></li>
-
-			<li></li>
-		</ul>
+		<ul><?php print_list_items(15); ?></ul>
 
 		<div class="jon__ear jon__ear-left"></div><!-- /.jon__ear -->
 
@@ -65,105 +25,7 @@
 		</div><!-- /.jon__eye -->
 
 		<div class="jon__beard">
-			<ul>
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-			</ul>
+			<ul><?php print_list_items(49); ?></ul>
 		</div><!-- /.jon__beard -->
 
 		<div class="jon__mouth"></div><!-- /.jon__mouth -->
@@ -181,25 +43,9 @@
 		</div><!-- /.jon__torse -->
 
 		<div class="jon__coat">
-			<ul class="jon__coat-shoulder jon__coat--left">
-				<li></li>
+			<ul class="jon__coat-shoulder jon__coat--left"><?php print_list_items(4); ?></ul>
 
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-			</ul>
-
-			<ul class="jon__coat-shoulder jon__coat--right">
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-
-				<li></li>
-			</ul>
+			<ul class="jon__coat-shoulder jon__coat--right"><?php print_list_items(4); ?></ul>
 		</div><!-- /.jon__coat -->
 
 		<div class="jon__foot jon__foot-left"></div><!-- /.jon__foot -->
@@ -221,13 +67,16 @@
 
 			<div class="wolf__nose">
 				<div class="wolf__nose-bottom"></div><!-- /.wolf__nose-bottom -->
+
 				<div class="wolf__nose-top"></div><!-- /.wolf__nose-bottom -->
 			</div><!-- /.wolf__nose -->
 		</div><!-- /.wolf -->
 
 		<div class="jon__sword">
 			<span class="left"></span>
+
 			<span class="right"></span>
+
 			<span class="bottom"></span>
 		</div><!-- /.jon__sword -->
 	</div><!-- /.jon__movable -->

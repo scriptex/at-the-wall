@@ -1,11 +1,10 @@
 <div class="clouds">
-	<div class="cloud cloud--left-top"></div><!-- /.cloud -->
-	
-	<div class="cloud cloud--left-middle"></div><!-- /.cloud -->
-
-	<div class="cloud cloud--left-bottom"></div><!-- /.cloud -->
-
-	<div class="cloud cloud--right-top"></div><!-- /.cloud -->
-
-	<div class="cloud cloud--right-bottom"></div><!-- /.cloud -->
+<?php
+$clouds = ['left-top', 'left-middle', 'left-bottom', 'right-top', 'right-bottom'];
+foreach ($clouds as $cloud) {
+	?>
+	<div class="cloud cloud--<?php echo $cloud?>"></div><!-- /.cloud -->
+	<?php
+}
+?>
 </div><!-- /.clouds -->

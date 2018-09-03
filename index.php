@@ -8,6 +8,30 @@ function critical_css($path = '/assets/dist/critical.css') {
 		echo '<style type="text/css" id="critical-css">' . $critical_css . '</style>';
 	}
 }
+
+function print_list_items($count) {
+	for ($i = 0; $i < $count; $i++) { 
+		echo '<li></li>';
+	}
+}
+
+function print_grid_items($count) {
+	for ($i = 0; $i < $count; $i++) { 
+		echo '<span></span>';
+	}
+}
+
+function print_tree() {
+	echo '<div class="tree__top"></div><!-- /.tree__top -->';
+	echo '<div class="tree__middle"></div><!-- /.tree__middle -->';
+	echo '<div class="tree__bottom"></div><!-- /.tree__bottom -->';
+}
+
+function print_part($name, $count) {
+	for ($i = 0; $i < $count; $i++) {
+		echo '<div class="' . $name . ' ' . $name . '--' . ($i + 1) . '"></div>';
+	}
+}
 ?>
 
 <!DOCTYPE html>
