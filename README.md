@@ -21,7 +21,11 @@ This repository contains a PWA version of the drawing, which can be installed on
 
 The demo contains a minified version of the HTML and the CSS output.
 
+-----
+
 **more details about the team and implementation are coming**
+
+-----
 
 ## LICENSE
 
