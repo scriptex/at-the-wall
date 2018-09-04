@@ -17,9 +17,11 @@ The drawing is completely fluid and adjusts itself to any viewport.
 
 This repository contains a PWA version of the drawing, which can be installed on a PWA supported device and/or viewed offline.
 
-## [DEMO](https://codepen.io/scriptex/full/eLWdKN/)
+## [DEMO](https://codepen.io/scriptex/full/eLWdKN/) and [PWA](https://at-the-wall.now.sh/)
 
 The demo contains a minified version of the HTML and the CSS output.
+
+The PWA can be installed on any device which supports service workers and can be viewed offline.
 
 -----
 
