@@ -32,7 +32,7 @@ The PWA can be installed on any device which supports service workers and can be
 
 ### Team B
 1. [Georgi Krastev](https://www.linkedin.com/in/georgi-krastev-a798abba)
-2. Veselein Stoyanov
+2. Veselin Stoyanov
 
 ### Team C
 1. [Atanas Atanasov](https://www.linkedin.com/in/scriptex)
@@ -43,7 +43,7 @@ The PWA can be installed on any device which supports service workers and can be
 2. [Mario Todorov](https://www.linkedin.com/in/mario-todorov-9297a045/)
 
 ### Team E
-1. [Ivailo Kolarov](https://www.linkedin.com/in/ivaylo-kolarov-70668763/)
+1. [Ivaylo Kolarov](https://www.linkedin.com/in/ivaylo-kolarov-70668763/)
 2. Elitsa Dimitrova
 
 ### PM
