@@ -25,11 +25,35 @@ The demo contains a minified version of the HTML and the CSS output.
 
 The PWA can be installed on any device which supports service workers and can be viewed offline.
 
------
+## Members (with links to their LinkedIn profiles):
 
-**more details about the team and implementation are coming**
+### Team A
+1. [Martin Apostolov](https://www.linkedin.com/in/martoapostolov/)
 
------
+### Team B
+1. [Georgi Krastev](https://www.linkedin.com/in/georgi-krastev-a798abba)
+2. Veselein Stoyanov
+
+### Team C
+1. [Atanas Atanasov](https://www.linkedin.com/in/scriptex)
+2. [Dimitar Germanov](https://www.linkedin.com/in/dimitar-germanov-43428312a)
+
+### Team D
+1. [Emil Georgiev](https://www.linkedin.com/in/emil-georgiev-23a5989b/)
+2. [Mario Todorov](https://www.linkedin.com/in/mario-todorov-9297a045/)
+
+### Team E
+1. [Ivailo Kolarov](https://www.linkedin.com/in/ivaylo-kolarov-70668763/)
+2. Elitsa Dimitrova
+
+### PM
+1. [Zoran Draganov](https://www.linkedin.com/in/zoran-a-k-a-zack-draganov-a7a156126/)
+
+### QA
+1. [Delyana Maneva](https://www.linkedin.com/in/delyana-maneva-b2069254/)
+
+### Illustrator
+1. [Nikolay Stanev](https://www.linkedin.com/in/nikolay-stanev-53ab04b8/)
 
 ## LICENSE
 
