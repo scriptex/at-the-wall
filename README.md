@@ -1,6 +1,8 @@
-[![Build Status](https://travis-ci.org/scriptex/at-the-wall.svg?branch=master)](https://travis-ci.org/scriptex/at-the-wall) 
-[![Greenkeeper badge](https://badges.greenkeeper.io/scriptex/at-the-wall.svg)](https://greenkeeper.io/)
+[![GitHub issues](https://img.shields.io/github/issues/scriptex/at-the-wall.svg)](https://github.com/scriptex/at-the-wall/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/scriptex/at-the-wall.svg)](https://github.com/scriptex/at-the-wall/commits/master)
+[![Build Status](https://travis-ci.org/scriptex/at-the-wall.svg?branch=master)](https://travis-ci.org/scriptex/at-the-wall)
 [![Analytics](https://ga-beacon.appspot.com/UA-83446952-1/github.com/scriptex/at-the-wall/README.md)](https://github.com/scriptex/at-the-wall/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/scriptex/at-the-wall.svg)](https://greenkeeper.io/)
 
 # At the Wall
 
