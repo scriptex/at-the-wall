@@ -1,3 +1,5 @@
+![Screenshot](https://raw.githubusercontent.com/scriptex/at-the-wall/master/at-the-wall.png?sanitize=true)
+
 [![GitHub issues](https://img.shields.io/github/issues/scriptex/at-the-wall.svg)](https://github.com/scriptex/at-the-wall/issues)
 [![GitHub last commit](https://img.shields.io/github/last-commit/scriptex/at-the-wall.svg)](https://github.com/scriptex/at-the-wall/commits/master)
 [![Build Status](https://travis-ci.org/scriptex/at-the-wall.svg?branch=master)](https://travis-ci.org/scriptex/at-the-wall)
