@@ -41,3 +41,6 @@ yarn.lock
 # Config files
 renovate.json
 webpack.config.js
+
+# Project specific
+at-the-wall.png
