@@ -46,7 +46,7 @@
     "postcss-normalize": "7.0.1",
     "postcss-url": "8.0.0",
     "postcss-utilities": "0.8.0",
-    "postcss-watch-folder": "0.1.2",
+    "postcss-watch-folder": "1.0.0",
     "sass-loader": "7.1.0",
     "webpack": "4.28.3",
     "webpack-cli": "3.2.0",
