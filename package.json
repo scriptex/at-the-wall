@@ -50,7 +50,7 @@
     "sass-loader": "7.1.0",
     "webpack": "4.29.3",
     "webpack-cli": "3.2.3",
-    "yargs": "13.1.0"
+    "yargs": "13.2.0"
   },
   "browserslist": [
     "> 1%",
