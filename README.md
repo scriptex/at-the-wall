@@ -35,7 +35,7 @@ The PWA can be installed on any device which supports service workers and can be
 
 ### Team B
 1. [Georgi Krastev](https://www.linkedin.com/in/georgi-krastev-a798abba)
-2. Veselin Stoyanov
+2. [Veselin Stoyanov](https://www.linkedin.com/in/veselin-stoyanov-20382b47)
 
 ### Team C
 1. [Atanas Atanasov](https://www.linkedin.com/in/scriptex)
