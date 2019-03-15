@@ -49,7 +49,7 @@
     "postcss-watch-folder": "1.0.0",
     "sass-loader": "7.1.0",
     "webpack": "4.29.6",
-    "webpack-cli": "3.2.3",
+    "webpack-cli": "3.3.0",
     "yargs": "13.2.2"
   },
   "browserslist": [
