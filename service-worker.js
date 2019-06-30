@@ -1,8 +1,12 @@
-const CACHE_NAME = 'at-the-wall';
+const CACHE_NAME = 'at-the-wall-cache';
 const urlsToCache = [
 	'/',
-	'/assets/dist/app.css',
-	'/assets/dist/critical.css',
+	'index.html',
+	'manifest.json',
+	'at-the-wall.appcache',
+	'service-worker.js',
+	'assets/dist/app.css',
+	'assets/dist/critical.css',
 	'assets/images/favicon/apple-touch-icon-57x57.png',
 	'assets/images/favicon/apple-touch-icon-114x114.png',
 	'assets/images/favicon/apple-touch-icon-72x72.png',
@@ -30,15 +34,45 @@ const urlsToCache = [
 	'icons/icon-152x152.png',
 	'icons/icon-192x192.png',
 	'icons/icon-384x384.png',
-	'icons/icon-512x512.png'
+	'icons/icon-512x512.png',
+	'launch-screens/launch-screen-2048x2732.png',
+	'launch-screens/launch-screen-2732x2048.png',
+	'launch-screens/launch-screen-1668x2388.png',
+	'launch-screens/launch-screen-2388x1668.png',
+	'launch-screens/launch-screen-1668x2224.png',
+	'launch-screens/launch-screen-2224x1668.png',
+	'launch-screens/launch-screen-1536x2048.png',
+	'launch-screens/launch-screen-2048x1536.png',
+	'launch-screens/launch-screen-1536x2048.png',
+	'launch-screens/launch-screen-2048x1536.png',
+	'launch-screens/launch-screen-1242x2688.png',
+	'launch-screens/launch-screen-2688x1242.png',
+	'launch-screens/launch-screen-1125x2436.png',
+	'launch-screens/launch-screen-2436x1125.png',
+	'launch-screens/launch-screen-828x1792.png',
+	'launch-screens/launch-screen-1792x828.png',
+	'launch-screens/launch-screen-1125x2436.png',
+	'launch-screens/launch-screen-2436x1125.png',
+	'launch-screens/launch-screen-1242x2208.png',
+	'launch-screens/launch-screen-2208x1242.png',
+	'launch-screens/launch-screen-750x1334.png',
+	'launch-screens/launch-screen-1334x750.png',
+	'launch-screens/launch-screen-1242x2208.png',
+	'launch-screens/launch-screen-2208x1242.png',
+	'launch-screens/launch-screen-750x1334.png',
+	'launch-screens/launch-screen-1334x750.png',
+	'launch-screens/launch-screen-1242x2208.png',
+	'launch-screens/launch-screen-2208x1242.png',
+	'launch-screens/launch-screen-750x1334.png',
+	'launch-screens/launch-screen-1334x750.png',
+	'launch-screens/launch-screen-640x1136.png',
+	'launch-screens/launch-screen-1136x640.png'
 ];
 
 self.addEventListener('install', event => {
 	self.skipWaiting();
 
-	event.waitUntil(
-		caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
-	);
+	event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache)));
 });
 
 self.addEventListener('fetch', event => {
@@ -51,11 +85,7 @@ self.addEventListener('fetch', event => {
 			const fetchRequest = event.request.clone();
 
 			return fetch(fetchRequest).then(response => {
-				if (
-					!response ||
-					response.status !== 200 ||
-					response.type !== 'basic'
-				) {
+				if (!response || response.status !== 200 || response.type !== 'basic') {
 					return response;
 				}
 
@@ -79,9 +109,7 @@ self.addEventListener('activate', event => {
 			.keys()
 			.then(cacheNames =>
 				Promise.all(
-					cacheNames
-						.filter(cacheName => cacheName !== CACHE_NAME)
-						.map(cacheName => caches.delete(cacheName))
+					cacheNames.filter(cacheName => cacheName !== CACHE_NAME).map(cacheName => caches.delete(cacheName))
 				)
 			)
 	);

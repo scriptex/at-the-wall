@@ -1,0 +1,561 @@
+
+<!DOCTYPE html>
+<html lang="en" manifest="at-the-wall.appcache">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="A Game of Thrones scene coded in HTML and CSS only" />
+
+	<title>At the Wall | A Game of Thrones scene in CSS and HTML</title>
+
+	<!--
+	For more info about the favicons and meta tags below see
+	https://github.com/audreyr/favicon-cheat-sheet
+	-->
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="assets/images/favicon/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="assets/images/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="assets/images/favicon/favicon-128.png" sizes="128x128" />
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon.ico" />
+	<meta name="application-name" content="At the Wall"/>
+	<meta name="msapplication-TileColor" content="#000000" />
+	<meta name="msapplication-TileImage" content="assets/images/favicon/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="assets/images/favicon/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="assets/images/favicon/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="assets/images/favicon/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="assets/images/favicon/mstile-310x310.png" />
+	<meta name="msapplication-config" content="config.xml" />
+	<meta name="theme-color" content="#000000" />
+
+	<!-- 12.9" iPad Pro Portrait -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-2048x2732.png"
+		media="(device-width: 2048px) and (device-height: 2732px) and (orientation: portrait)"
+	/>
+
+	<!-- 12.9" iPad Pro Landscape -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-2732x2048.png"
+		media="(device-width: 2732px) and (device-height: 2048px) and (orientation: landscape)"
+	/>
+
+	<!--  11" iPad Pro Portrait -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-1668x2388.png"
+		media="(device-width: 1668px) and (device-height: 2388px) and (orientation: portrait)"
+	/>
+
+	<!--  11" iPad Pro Landscape -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-2388x1668.png"
+		media="(device-width: 2388px) and (device-height: 1668px) and (orientation: landscape)"
+	/>
+
+	<!-- 10.5" iPad Pro Portrait -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-1668x2224.png"
+		media="(device-width: 1668px) and (device-height: 2224px) and (orientation: portrait)"
+	/>
+
+	<!-- 10.5" iPad Pro Landscape -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-2224x1668.png"
+		media="(device-width: 2224px) and (device-height: 1668px) and (orientation: landscape)"
+	/>
+
+	<!--  9.7" iPad Portrait -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-1536x2048.png"
+		media="(device-width: 1536px) and (device-height: 2048px) and (orientation: portrait)"
+	/>
+
+	<!--  9.7" iPad Landscape -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-2048x1536.png"
+		media="(device-width: 2048px) and (device-height: 1536px) and (orientation: landscape)"
+	/>
+
+	<!--7.9" iPad mini 4 Portrait -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-1536x2048.png"
+		media="(device-width: 1536px) and (device-height: 2048px) and (orientation: portrait)"
+	/>
+
+	<!--7.9" iPad mini 4 Landscape -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-2048x1536.png"
+		media="(device-width: 2048px and (device-height: 1536px) and (orientation: landscape)"
+	/>
+
+	<!--  iPhone XS Max Portrait -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-1242x2688.png"
+		media="(device-width: 1242px and (device-height: 2688px) and (orientation: portrait)"
+	/>
+
+	<!--  iPhone XS Max Landscape -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-2688x1242.png"
+		media="(device-width: 2688px) and (device-height: 142px) and (orientation: landscape)"
+	/>
+
+	<!--  iPhone XS Portrait -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-1125x2436.png"
+		media="(device-width: 1125px) and (device-height: 236px) and (orientation: portrait)"
+	/>
+
+	<!--  iPhone XS Landscape -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-2436x1125.png"
+		media="(device-width: 2436px) and (device-height: 1125px) and (orientation: landscape)"
+	/>
+
+	<!--  iPhone XR Portrait -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-828x1792.png"
+		media="(device-width: 828px) and (device-height: 192px) and (orientation: portrait)"
+	/>
+
+	<!--  iPhone XR Landscape -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-1792x828.png"
+		media="(device-width: 1792px) and (device-height: 28px) and (orientation: landscape)"
+	/>
+
+	<!--  iPhone X Portrait -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-1125x2436.png"
+		media="(device-width: 1125px) and (device-height: 236px) and (orientation: portrait)"
+	/>
+
+	<!--  iPhone X Landscape -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-2436x1125.png"
+		media="(device-width: 2436px and (device-height: 1125px) and (orientation: landscape)"
+	/>
+
+	<!--  iPhone 8 Plus Portrait -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-1242x2208.png"
+		media="(device-width: 1242px and (device-height: 2208px) and (orientation: portrait)"
+	/>
+
+	<!--  iPhone 8 Plus Landscape -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-2208x1242.png"
+		media="(device-width: 2208px) and (device-height: 1242px) and (orientation: landscape)"
+	/>
+
+	<!--  iPhone 8 Portrait -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-750x1334.png"
+		media="(device-width: 750px) and (device-height: 134px) and (orientation: portrait)"
+	/>
+
+	<!--  iPhone 8 Landscape -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-1334x750.png"
+		media="(device-width: 1334px and (device-height: 750px) and (orientation: landscape)"
+	/>
+
+	<!--  iPhone 7 Plus Portrait -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-1242x2208.png"
+		media="(device-width: 1242px and (device-height: 2208px) and (orientation: portrait)"
+	/>
+
+	<!--  iPhone 7 Plus Landscape -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-2208x1242.png"
+		media="(device-width: 2208px) and (device-height: 1242px) and (orientation: landscape)"
+	/>
+
+	<!--  iPhone 7 Portrait -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-750x1334.png"
+		media="(device-width: 750px) and (device-height: 134px) and (orientation: portrait)"
+	/>
+
+	<!--  iPhone 7 Landscape -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-1334x750.png"
+		media="(device-width: 1334px and (device-height: 750px) and (orientation: landscape)"
+	/>
+
+	<!--  iPhone 6s Plus Portrait -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-1242x2208.png"
+		media="(device-width: 1242px and (device-height: 2208px) and (orientation: portrait)"
+	/>
+
+	<!--  iPhone 6s Plus Landscape -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-2208x1242.png"
+		media="(device-width: 2208px) and (device-height: 1242px) and (orientation: landscape)"
+	/>
+
+	<!--  iPhone 6s Portrait -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-750x1334.png"
+		media="(device-width: 750px) and (device-height: 134px) and (orientation: portrait)"
+	/>
+
+	<!--  iPhone 6s Landscape -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-1334x750.png"
+		media="(device-width: 1334px) and (device-height: 50px) and (orientation: landscape)"
+	/>
+
+	<!--  iPhone SE Portrait -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-640x1136.png"
+		media="(device-width: 640px) and (device-height: 136px) and (orientation: portrait)"
+	/>
+
+	<!--  iPhone SE Landscape -->
+	<link
+		rel="apple-touch-startup-image"
+		href="launch-screens/launch-screen-1136x640.png"
+		media="(device-width: 1136px) and (device-height: 640px) and (orientation: landscape)"
+	/>
+
+	<link rel="manifest" href="manifest.json" />
+
+
+	<link rel="stylesheet" href="assets/dist/app.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<div id="got" class="scene">
+			<div class="jon">
+	<div class="jon__hair-back">
+		<ul><li></li><li></li><li></li><li></li><li></li></ul>
+	</div><!-- /.jon__hair-back -->
+
+	<div class="jon__hair">
+		<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+
+		<div class="jon__ear jon__ear-left"></div><!-- /.jon__ear -->
+
+		<div class="jon__ear jon__ear-right"></div><!-- /.jon__ear -->
+	</div><!-- /.jon__hair -->
+
+	<div class="jon__head">
+		<div class="jon__eye jon__eye-left">
+			<span></span>
+
+			<div class="jon__eyelid"></div><!-- /.jon__eyelid -->
+		</div><!-- /.jon__eye -->
+
+		<div class="jon__eye jon__eye-right">
+			<span></span>
+
+			<div class="jon__eyelid"></div><!-- /.jon__eyelid -->
+		</div><!-- /.jon__eye -->
+
+		<div class="jon__beard">
+			<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+		</div><!-- /.jon__beard -->
+
+		<div class="jon__mouth"></div><!-- /.jon__mouth -->
+
+		<div class="jon__nose">
+			<span></span>
+
+			<em></em>
+		</div><!-- /.jon__nose -->
+	</div><!-- /.jon__head -->
+
+	<div class="jon__body">
+		<div class="jon__torse">
+			<span></span>
+		</div><!-- /.jon__torse -->
+
+		<div class="jon__coat">
+			<ul class="jon__coat-shoulder jon__coat--left"><li></li><li></li><li></li><li></li></ul>
+
+			<ul class="jon__coat-shoulder jon__coat--right"><li></li><li></li><li></li><li></li></ul>
+		</div><!-- /.jon__coat -->
+
+		<div class="jon__foot jon__foot-left"></div><!-- /.jon__foot -->
+
+		<div class="jon__foot jon__foot-right"></div><!-- /.jon__foot -->
+	</div><!-- /.jon__body -->
+
+	<div class="jon__hand">
+		<span></span>
+
+		<span></span>
+	</div><!-- /.jon__hand -->
+
+	<div class="jon__movable">
+		<div class="wolf">
+			<div class="wolf__eye wolf__eye-left"></div><!-- /.wolf__eye -->
+
+			<div class="wolf__eye wolf__eye-right"></div><!-- /.wolf__eye -->
+
+			<div class="wolf__nose">
+				<div class="wolf__nose-bottom"></div><!-- /.wolf__nose-bottom -->
+
+				<div class="wolf__nose-top"></div><!-- /.wolf__nose-bottom -->
+			</div><!-- /.wolf__nose -->
+		</div><!-- /.wolf -->
+
+		<div class="jon__sword">
+			<span class="left"></span>
+
+			<span class="right"></span>
+
+			<span class="bottom"></span>
+		</div><!-- /.jon__sword -->
+	</div><!-- /.jon__movable -->
+
+	<div class="jon__earth"></div><!-- /.jon__earth -->
+</div><!-- /.jon -->
+
+			<div class="white-walker">
+	<div class="head">
+		<div class="head__inner"></div><!-- /.head__inner -->
+
+		<div class="ear__left"></div><!-- /.ear__left -->
+
+		<div class="ear__right"></div><!-- /.ear__right -->
+
+		<div class="horns horns--left"></div><!-- /.horns -->
+
+		<div class="horns horns--right"></div><!-- /.horns -->
+
+		<div class="middle-horns middle-horns--left"></div><!-- /.middle-horns -->
+
+		<div class="middle-horns middle-horns--right"></div><!-- /.middle-horns -->
+
+		<div class="eyebrow eyebrow--left"></div><!-- /.eyebrow eyebrow-/-left -->
+
+		<div class="eyebrow eyebrow--right"></div><!-- /.eyebrow eyebrow-/-right -->
+
+		<div class="eye eye--left">
+			<div class="eyelid"></div><!-- /.eyelid -->
+		</div><!-- /.eye eye-/-left -->
+
+		<div class="eye eye--right">
+			<div class="eyelid"></div><!-- /.eyelid -->
+		</div><!-- /.eye eye-/-right -->
+
+		<div class="cheek-left"></div><!-- /.cheek-left -->
+
+		<div class="cheek-right"></div><!-- /.cheek-right -->
+
+		<div class="nose">
+			<div class="nose__upper">
+				<div class="nose__upper-left"></div><!-- /.nose__upper-left -->
+
+				<div class="nose__upper-right"></div><!-- /.nose__upper-right -->
+			</div><!-- /.nose__upper -->
+
+			<div class="nostril--left"></div><!-- /.nostril-/-left -->
+
+			<div class="nostril--right"></div><!-- /.nostril-/-right -->
+		</div><!-- /.nose -->
+
+		<div class="mouth">
+			<div class="mustache mustache--left"></div><!-- /.mustache -->
+
+			<div class="mustache mustache--right"></div><!-- /.mustache -->
+		</div><!-- /.mouth -->
+
+		<div class="chin">
+			<div class="chin__inner"></div><!-- /.chin__inner -->
+		</div><!-- /.chin -->
+
+		<div class="dimples dimples--left"></div><!-- /.dimples -->
+
+		<div class="dimples dimples--right"></div><!-- /.dimples -->
+
+		<div class="large-horns large-horns--left">
+			<div class="large-horns__inner"></div><!-- /.large-horns__inner -->
+
+			<div class="large-horns__shape"></div><!-- /.large-horns__shape -->
+		</div><!-- /.large-horns large-horns-/-left -->
+
+		<div class="large-horns large-horns--right">
+			<div class="large-horns__inner"></div><!-- /.large-horns__inner -->
+
+			<div class="large-horns__shape"></div><!-- /.large-horns__shape -->
+		</div><!-- /.large-horns large-horns-/-right -->
+	</div><!-- /.head -->
+
+	<div class="body">
+		<div class="body-inner">
+			<div class="torso">
+				<div class="torso__top"></div><!-- /.torso__top -->
+
+				<div class="torso__bottom"></div><!-- /.torso__bottom -->
+
+				<div class="torso__band torso__band-top"></div><!-- /.torso__band torso__band-top -->
+
+				<div class="torso__band torso__band-bottom"></div><!-- /.torso__band torso__band-bottom -->
+
+				<div class="tie">
+					<div class="tie__back"></div><!-- /.tie__back -->
+
+					<div class="tie__front"></div><!-- /.tie__front -->
+				</div><!-- /.tie -->
+			</div><!-- /.torso -->
+
+			<div class="leg leg--left">
+				<div class="foot"></div><!-- /.foot -->
+			</div><!-- /.leg leg-/-left -->
+
+			<div class="leg leg--right">
+				<div class="foot"></div><!-- /.foot -->
+			</div><!-- /.leg leg-/-right -->
+
+			<div class="hand hand--left">
+				<div class="paw"></div><!-- /.paw -->
+
+				<div class="hand__armor"></div><!-- /.hand__armor -->
+			</div><!-- /.hand hand-/-left -->
+
+			<div class="shoulder shoulder--left">
+				<div class="shoulder__grid">
+					<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>				</div><!-- /.shoulder__grid -->
+			</div><!-- /.shoulder shoulder-/-left -->
+
+			<div class="shoulder shoulder--right">
+				<div class="shoulder__grid">
+					<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>				</div><!-- /.shoulder__grid -->
+			</div><!-- /.shoulder shoulder-/-right -->
+		</div><!-- /.body-inner -->
+
+		<div class="movable">
+			<div class="hand hand--right">
+				<div class="paw"></div><!-- /.paw -->
+			</div><!-- /.hand hand-/-right -->
+
+			<div class="sword">
+				<div class="sword__bottom"></div><!-- /.sword__bottom -->
+
+				<div class="sword__blade">
+					<div class="sword__blade-bottom"></div><!-- /.sword__blade-bottom -->
+
+					<div class="sword__blade-top">
+						<div class="sword__blade-top--left"></div><!-- /.sword__blade-top-/-left -->
+
+						<div class="sword__blade-top--right"></div><!-- /.sword__blade-top-/-right -->
+
+						<div class="sword__blade-top--middle"></div><!-- /.sword__blade-top-/-middle -->
+					</div><!-- /.sword__blade-top -->
+				</div><!-- /.sword__blade -->
+			</div><!-- /.sword -->
+		</div><!-- /.movable -->
+	</div><!-- /.body -->
+</div><!-- /.white-walker -->
+
+			<div class="clouds">
+	<div class="cloud cloud--left-top"></div><!-- /.cloud --><div class="cloud cloud--left-middle"></div><!-- /.cloud --><div class="cloud cloud--left-bottom"></div><!-- /.cloud --><div class="cloud cloud--right-top"></div><!-- /.cloud --><div class="cloud cloud--right-bottom"></div><!-- /.cloud --></div><!-- /.clouds -->
+			<div class="sky"></div><!-- /.sky -->
+
+			<div class="snowflakes">
+	<div class="snowflake snowflake--1"></div><div class="snowflake snowflake--2"></div><div class="snowflake snowflake--3"></div><div class="snowflake snowflake--4"></div><div class="snowflake snowflake--5"></div><div class="snowflake snowflake--6"></div><div class="snowflake snowflake--7"></div><div class="snowflake snowflake--8"></div><div class="snowflake snowflake--9"></div><div class="snowflake snowflake--10"></div><div class="snowflake snowflake--11"></div><div class="snowflake snowflake--12"></div><div class="snowflake snowflake--13"></div><div class="snowflake snowflake--14"></div><div class="snowflake snowflake--15"></div><div class="snowflake snowflake--16"></div><div class="snowflake snowflake--17"></div><div class="snowflake snowflake--18"></div><div class="snowflake snowflake--19"></div><div class="snowflake snowflake--20"></div><div class="snowflake snowflake--21"></div><div class="snowflake snowflake--22"></div><div class="snowflake snowflake--23"></div><div class="snowflake snowflake--24"></div><div class="snowflake snowflake--25"></div><div class="snowflake snowflake--26"></div><div class="snowflake snowflake--27"></div><div class="snowflake snowflake--28"></div><div class="snowflake snowflake--29"></div><div class="snowflake snowflake--30"></div><div class="snowflake snowflake--31"></div><div class="snowflake snowflake--32"></div><div class="snowflake snowflake--33"></div><div class="snowflake snowflake--34"></div><div class="snowflake snowflake--35"></div><div class="snowflake snowflake--36"></div><div class="snowflake snowflake--37"></div><div class="snowflake snowflake--38"></div><div class="snowflake snowflake--39"></div><div class="snowflake snowflake--40"></div><div class="snowflake snowflake--41"></div><div class="snowflake snowflake--42"></div><div class="snowflake snowflake--43"></div><div class="snowflake snowflake--44"></div><div class="snowflake snowflake--45"></div><div class="snowflake snowflake--46"></div><div class="snowflake snowflake--47"></div><div class="snowflake snowflake--48"></div><div class="snowflake snowflake--49"></div><div class="snowflake snowflake--50"></div><div class="snowflake snowflake--51"></div><div class="snowflake snowflake--52"></div><div class="snowflake snowflake--53"></div><div class="snowflake snowflake--54"></div><div class="snowflake snowflake--55"></div><div class="snowflake snowflake--56"></div><div class="snowflake snowflake--57"></div><div class="snowflake snowflake--58"></div><div class="snowflake snowflake--59"></div><div class="snowflake snowflake--60"></div><div class="snowflake snowflake--61"></div><div class="snowflake snowflake--62"></div><div class="snowflake snowflake--63"></div><div class="snowflake snowflake--64"></div><div class="snowflake snowflake--65"></div><div class="snowflake snowflake--66"></div><div class="snowflake snowflake--67"></div><div class="snowflake snowflake--68"></div><div class="snowflake snowflake--69"></div><div class="snowflake snowflake--70"></div><div class="snowflake snowflake--71"></div><div class="snowflake snowflake--72"></div><div class="snowflake snowflake--73"></div><div class="snowflake snowflake--74"></div><div class="snowflake snowflake--75"></div><div class="snowflake snowflake--76"></div><div class="snowflake snowflake--77"></div><div class="snowflake snowflake--78"></div><div class="snowflake snowflake--79"></div><div class="snowflake snowflake--80"></div><div class="snowflake snowflake--81"></div><div class="snowflake snowflake--82"></div><div class="snowflake snowflake--83"></div><div class="snowflake snowflake--84"></div><div class="snowflake snowflake--85"></div><div class="snowflake snowflake--86"></div><div class="snowflake snowflake--87"></div><div class="snowflake snowflake--88"></div><div class="snowflake snowflake--89"></div><div class="snowflake snowflake--90"></div><div class="snowflake snowflake--91"></div><div class="snowflake snowflake--92"></div><div class="snowflake snowflake--93"></div><div class="snowflake snowflake--94"></div><div class="snowflake snowflake--95"></div><div class="snowflake snowflake--96"></div><div class="snowflake snowflake--97"></div><div class="snowflake snowflake--98"></div><div class="snowflake snowflake--99"></div><div class="snowflake snowflake--100"></div><div class="snowflake snowflake--101"></div><div class="snowflake snowflake--102"></div><div class="snowflake snowflake--103"></div><div class="snowflake snowflake--104"></div><div class="snowflake snowflake--105"></div><div class="snowflake snowflake--106"></div><div class="snowflake snowflake--107"></div><div class="snowflake snowflake--108"></div><div class="snowflake snowflake--109"></div><div class="snowflake snowflake--110"></div><div class="snowflake snowflake--111"></div><div class="snowflake snowflake--112"></div><div class="snowflake snowflake--113"></div><div class="snowflake snowflake--114"></div><div class="snowflake snowflake--115"></div><div class="snowflake snowflake--116"></div><div class="snowflake snowflake--117"></div><div class="snowflake snowflake--118"></div><div class="snowflake snowflake--119"></div><div class="snowflake snowflake--120"></div><div class="snowflake snowflake--121"></div><div class="snowflake snowflake--122"></div><div class="snowflake snowflake--123"></div><div class="snowflake snowflake--124"></div><div class="snowflake snowflake--125"></div><div class="snowflake snowflake--126"></div><div class="snowflake snowflake--127"></div><div class="snowflake snowflake--128"></div><div class="snowflake snowflake--129"></div><div class="snowflake snowflake--130"></div><div class="snowflake snowflake--131"></div><div class="snowflake snowflake--132"></div><div class="snowflake snowflake--133"></div><div class="snowflake snowflake--134"></div><div class="snowflake snowflake--135"></div><div class="snowflake snowflake--136"></div><div class="snowflake snowflake--137"></div><div class="snowflake snowflake--138"></div><div class="snowflake snowflake--139"></div><div class="snowflake snowflake--140"></div><div class="snowflake snowflake--141"></div><div class="snowflake snowflake--142"></div><div class="snowflake snowflake--143"></div><div class="snowflake snowflake--144"></div><div class="snowflake snowflake--145"></div><div class="snowflake snowflake--146"></div><div class="snowflake snowflake--147"></div><div class="snowflake snowflake--148"></div><div class="snowflake snowflake--149"></div><div class="snowflake snowflake--150"></div></div><!-- /.snowflakes -->
+
+			<div class="wall">
+	<div class="wall__part wall__part--side wall__part--left">
+		<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+	</div><!-- /.wall__part wall__part-/-side wall__part-/-left -->
+
+	<div class="wall__part wall__part--center">
+		<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+	</div><!-- /.wall__center -->
+
+	<div class="wall__part wall__part--side wall__part--right">
+		<ul><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+	</div><!-- /.wall__part wall__part-/-side wall__part-/-right -->
+</div><!-- /.wall -->
+
+			<div class="ground">
+	<div class="ground__part ground__part--1"></div><div class="ground__part ground__part--2"></div><div class="ground__part ground__part--3"></div><div class="ground__part ground__part--4"></div><div class="ground__part ground__part--5"></div><div class="ground__part ground__part--6"></div><div class="ground__part ground__part--7"></div><div class="ground__part ground__part--8"></div><div class="ground__part ground__part--9"></div></div><!-- /.ground -->
+
+<div class="door">
+	<div class="door__part door__part--top"></div><!-- /.door__part door__part-/-top -->
+
+	<div class="door__part door__part--left"></div><!-- /.door__part door__part-/-left -->
+
+	<div class="door__part door__part--right"></div><!-- /.door__part door__part-/-right -->
+
+	<div class="door__inner">
+		<div class="door__trapetz">
+			<div class="trapetz__part trapetz__part--background"></div><!-- /.trapetz__part trapetz__part-/-background -->
+
+			<div class="trapetz__part trapetz__part--top"></div><!-- /.trapetz__part trapetz__part-/-top -->
+
+			<div class="trapetz__part trapetz__part--bottom"></div><!-- /.trapetz__part trapetz__part-/-bottom -->
+		</div><!-- /.door__trapetz -->
+	</div><!-- /.door__inner -->
+</div><!-- /.door -->
+
+<div class="trees trees--left">
+	<div class="tree-medium"><div class="tree__top"></div><!-- /.tree__top --><div class="tree__middle"></div><!-- /.tree__middle --><div class="tree__bottom"></div><!-- /.tree__bottom --></div><!-- /.tree-medium -->
+
+	<div class="tree-large"><div class="tree__top"></div><!-- /.tree__top --><div class="tree__middle"></div><!-- /.tree__middle --><div class="tree__bottom"></div><!-- /.tree__bottom --></div><!-- /.tree-two -->
+</div><!-- /.trees-left -->
+
+<div class="trees trees--right">
+	<div class="tree-small"><div class="tree__top"></div><!-- /.tree__top --><div class="tree__middle"></div><!-- /.tree__middle --><div class="tree__bottom"></div><!-- /.tree__bottom --></div><!-- /.tree-small -->
+
+	<div class="tree-large"><div class="tree__top"></div><!-- /.tree__top --><div class="tree__middle"></div><!-- /.tree__middle --><div class="tree__bottom"></div><!-- /.tree__bottom --></div><!-- /.tree-two -->
+
+	<div class="tree-medium"><div class="tree__top"></div><!-- /.tree__top --><div class="tree__middle"></div><!-- /.tree__middle --><div class="tree__bottom"></div><!-- /.tree__bottom --></div><!-- /.tree-medium -->
+</div><!-- /.trees-right -->
+		</div><!-- /#got.scene -->
+	</div>
+
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('./service-worker.js');
+			});
+		}
+	</script>
+</body>
+</html>
