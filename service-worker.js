@@ -6,7 +6,6 @@ const urlsToCache = [
 	'at-the-wall.appcache',
 	'service-worker.js',
 	'assets/dist/app.css',
-	'assets/dist/critical.css',
 	'assets/images/favicon/apple-touch-icon-57x57.png',
 	'assets/images/favicon/apple-touch-icon-114x114.png',
 	'assets/images/favicon/apple-touch-icon-72x72.png',

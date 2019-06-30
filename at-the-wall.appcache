@@ -12,7 +12,6 @@ manifest.json
 at-the-wall.appcache
 service-worker.js
 assets/dist/app.css
-assets/dist/critical.css
 
 # App Icons
 icons/icon-72x72.png
