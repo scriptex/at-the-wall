@@ -1,5 +1,12 @@
 {
 	"version": 2,
 	"name": "at-the-wall",
-	"alias": "at-the-wall.now.sh"
+	"alias": "at-the-wall.now.sh",
+	"builds": [
+		{
+			"src": "package.json",
+			"use": "@now/static-build",
+			"config": { "distDir": "/" }
+		}
+	]
 }
