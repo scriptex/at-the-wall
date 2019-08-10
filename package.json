@@ -49,7 +49,7 @@
 		"postcss-url": "8.0.0",
 		"postcss-utilities": "0.8.4",
 		"postcss-watch-folder": "1.0.0",
-		"sass-loader": "7.1.0",
+		"sass-loader": "7.2.0",
 		"webpack": "4.39.1",
 		"webpack-cli": "3.3.6",
 		"yargs": "13.3.0"
