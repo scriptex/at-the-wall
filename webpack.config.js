@@ -31,10 +31,7 @@ const browserSyncConfig = {
 	host: 'localhost',
 	port: 3000,
 	open: 'external',
-	files: [
-		'**/*.php',
-		'./assets/dist/app.css'
-	],
+	files: ['**/*.php', './assets/dist/app.css'],
 	ghostMode: {
 		clicks: false,
 		scroll: true,
@@ -113,7 +110,9 @@ module.exports = env => {
 							{
 								loader: 'sass-loader',
 								options: {
-									importer: magicImporter(),
+									sassOptions: {
+										importer: magicImporter()
+									},
 									...sourceMap
 								}
 							}
@@ -122,10 +121,7 @@ module.exports = env => {
 				}
 			]
 		},
-		plugins: [
-			new ExtractTextPlugin(extractTextConfig),
-			new CleanWebpackPlugin(['./assets/dist/'], cleanConfig)
-		],
+		plugins: [new ExtractTextPlugin(extractTextConfig), new CleanWebpackPlugin(['./assets/dist/'], cleanConfig)],
 		cache: true,
 		bail: false,
 		devtool: isDevelopment ? 'source-map' : false,
