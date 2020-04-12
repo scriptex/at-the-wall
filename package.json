@@ -45,7 +45,7 @@
 		"postcss-flexbugs-fixes": "4.2.0",
 		"postcss-loader": "3.0.0",
 		"postcss-merge-rules": "4.0.3",
-		"postcss-normalize": "8.0.1",
+		"postcss-normalize": "9.0.0",
 		"postcss-url": "8.0.0",
 		"postcss-utilities": "0.8.4",
 		"postcss-watch-folder": "1.0.0",
