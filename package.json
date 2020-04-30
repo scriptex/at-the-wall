@@ -29,7 +29,7 @@
 	"license": "MIT",
 	"dependencies": {},
 	"devDependencies": {
-		"@three11/optisize": "1.0.0",
+		"@three11/optisize": "1.1.0",
 		"autoprefixer": "9.7.6",
 		"browser-sync": "2.26.7",
 		"browser-sync-webpack-plugin": "2.2.2",
