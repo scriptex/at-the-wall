@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 const url = require('url');
 const path = require('path');
 const { argv } = require('yargs');
@@ -5,7 +7,7 @@ const { argv } = require('yargs');
 const magicImporter = require('node-sass-magic-importer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const sourceMap = {
 	sourceMap: argv.env.NODE_ENV === 'development'
@@ -56,7 +58,7 @@ const extractTextConfig = {
 };
 
 const cleanConfig = {
-	verbose: false
+	cleanOnceBeforeBuildPatterns: ['dist/*', '!dist/sprite.svg']
 };
 
 module.exports = env => {
@@ -121,7 +123,7 @@ module.exports = env => {
 				}
 			]
 		},
-		plugins: [new ExtractTextPlugin(extractTextConfig), new CleanWebpackPlugin(['./assets/dist/'], cleanConfig)],
+		plugins: [new ExtractTextPlugin(extractTextConfig), new CleanWebpackPlugin(cleanConfig)],
 		cache: true,
 		bail: false,
 		devtool: isDevelopment ? 'source-map' : false,
