@@ -5,8 +5,8 @@ const path = require('path');
 const { argv } = require('yargs');
 
 const magicImporter = require('node-sass-magic-importer');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const sourceMap = {
@@ -53,8 +53,7 @@ const browserSyncConfig = {
 };
 
 const extractTextConfig = {
-	filename: 'dist/app.css',
-	allChunks: true
+	filename: 'dist/app.css'
 };
 
 const cleanConfig = {
@@ -66,14 +65,7 @@ module.exports = env => {
 	const isProduction = env.NODE_ENV === 'production';
 
 	if (isProduction) {
-		postcssConfig.plugins.push(
-			require('postcss-merge-rules'),
-			require('cssnano')({
-				discardComments: {
-					removeAll: true
-				}
-			})
-		);
+		postcssConfig.plugins.push(require('postcss-merge-rules'), require('cssnano')());
 	}
 
 	if (isDevelopment) {
@@ -98,32 +90,36 @@ module.exports = env => {
 		module: {
 			rules: [
 				{
-					test: /\.scss$/,
-					use: ExtractTextPlugin.extract({
-						use: [
-							{
-								loader: 'css-loader',
-								options: sourceMap
-							},
-							{
-								loader: 'postcss-loader',
-								options: postcssConfig
-							},
-							{
-								loader: 'sass-loader',
-								options: {
-									sassOptions: {
-										importer: magicImporter()
-									},
-									...sourceMap
-								}
+					test: /\.(sa|sc|c)ss$/,
+					use: [
+						{
+							loader: MiniCssExtractPlugin.loader,
+							options: {
+								hmr: env.NODE_ENV === 'development'
 							}
-						]
-					})
+						},
+						{
+							loader: 'css-loader',
+							options: sourceMap
+						},
+						{
+							loader: 'postcss-loader',
+							options: postcssConfig
+						},
+						{
+							loader: 'sass-loader',
+							options: {
+								sassOptions: {
+									importer: magicImporter()
+								},
+								...sourceMap
+							}
+						}
+					]
 				}
 			]
 		},
-		plugins: [new ExtractTextPlugin(extractTextConfig), new CleanWebpackPlugin(cleanConfig)],
+		plugins: [new MiniCssExtractPlugin(extractTextConfig), new CleanWebpackPlugin(cleanConfig)],
 		cache: true,
 		bail: false,
 		devtool: isDevelopment ? 'source-map' : false,
