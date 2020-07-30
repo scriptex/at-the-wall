@@ -7733,6 +7733,11 @@ schema-utils@^2.7.0:
     ajv "^6.12.2"
     ajv-keywords "^3.4.1"
 
+scriptex-socials@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/scriptex-socials/-/scriptex-socials-1.2.0.tgz#cd201103c1a93e833e0900e849019b4da6a39b07"
+  integrity sha512-aJz7E0fL/uZU7RvVwC9GiUcEhG9Es3A13f0SMArPCKZSNnq36gTvf2NptdGb22b4WyFsdWj9ORqPEUDy3ZBzaQ==
+
 scss-tokenizer@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/scss-tokenizer/-/scss-tokenizer-0.2.3.tgz#8eb06db9a9723333824d3f5530641149847ce5d1"
