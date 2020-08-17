@@ -28,6 +28,7 @@
 	},
 	"license": "MIT",
 	"dependencies": {
+		"html-head-component": "1.0.0",
 		"scriptex-socials": "1.2.0"
 	},
 	"devDependencies": {
