@@ -1,4 +1,5 @@
-const CACHE_NAME = 'at-the-wall-cache ' + new Date().getTime();
+// @ts-nocheck
+const CACHE_NAME = 'at-the-wall-cache-' + new Date().getTime();
 const urlsToCache = [
 	'./manifest.json',
 	'./index.html',
@@ -90,7 +91,6 @@ self.addEventListener('fetch', event => {
 });
 
 self.addEventListener('activate', event => {
-	console.log(event);
 	event.waitUntil(
 		caches
 			.keys()
