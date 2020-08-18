@@ -39,12 +39,16 @@ function print_part($name, $count) {
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
 
 	<?php critical_css(); ?>
 
-	<html-head-component src="./assets/scripts/meta.json"></html-head-component>
+	<link rel="manifest" href="manifest.json">
 </head>
 <body>
+	<html-head-component src="./assets/scripts/meta.json" hidden></html-head-component>
+
 	<div class="wrapper">
 		<div id="got" class="scene">
 			<?php include_once('components/jon-snow.php'); ?>
