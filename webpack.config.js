@@ -13,7 +13,7 @@ const sourceMap = {
 	sourceMap: argv.env.NODE_ENV === 'development'
 };
 
-const postcssConfig = {
+const postcssOptions = {
 	plugins: [
 		require('postcss-easy-import'),
 		require('postcss-url')({
@@ -65,11 +65,11 @@ module.exports = env => {
 	const isProduction = env.NODE_ENV === 'production';
 
 	if (isProduction) {
-		postcssConfig.plugins.push(require('postcss-merge-rules'), require('cssnano')());
+		postcssOptions.plugins.push(require('postcss-merge-rules'), require('cssnano')());
 	}
 
 	if (isDevelopment) {
-		postcssConfig.plugins.push(
+		postcssOptions.plugins.push(
 			require('postcss-watch-folder')({
 				folder: './assets/styles',
 				main: './assets/styles/main.scss'
@@ -104,7 +104,7 @@ module.exports = env => {
 						},
 						{
 							loader: 'postcss-loader',
-							options: postcssConfig
+							options: { postcssOptions }
 						},
 						{
 							loader: 'sass-loader',
