@@ -7122,10 +7122,10 @@ postcss@7.0.7:
     source-map "^0.6.1"
     supports-color "^5.5.0"
 
-postcss@8.0.6:
-  version "8.0.6"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.0.6.tgz#1507160d7df320c77f8f4819cf52491f4748b672"
-  integrity sha512-P4lvqkhoiba/w0JE1t432xlQyeJnnf1elrviZOX0GybserV79IN4skB2nQg+NoOmkq30MNqVv9ggdqVmYjaolA==
+postcss@8.0.9:
+  version "8.0.9"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.0.9.tgz#d112fc1e8bbed550657901550fa736ae3dd25ec5"
+  integrity sha512-9Ikq03Hvb/L6dgnOtNOUbcgg9Rsff5uKrI1TyNTQ2ALpa6psZk1Ar3/Hhxv2Q0rECRGDxtcMUTZIQglXozlrDQ==
   dependencies:
     colorette "^1.2.1"
     line-column "^1.0.2"
