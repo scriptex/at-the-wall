@@ -52,7 +52,7 @@
 		"postcss-loader": "4.0.4",
 		"postcss-merge-rules": "4.0.3",
 		"postcss-normalize": "9.0.0",
-		"postcss-url": "10.0.0",
+		"postcss-url": "10.1.0",
 		"postcss-utilities": "0.8.4",
 		"postcss-watch-folder": "1.0.0",
 		"sass-loader": "10.0.5",
