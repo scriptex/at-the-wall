@@ -6,8 +6,8 @@ const { argv } = require('yargs');
 
 const magicImporter = require('node-sass-magic-importer');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const sourceMap = {
 	sourceMap: argv.env.NODE_ENV === 'development'
@@ -53,11 +53,14 @@ const browserSyncConfig = {
 };
 
 const extractTextConfig = {
-	filename: 'dist/app.css'
+	filename: 'dist/app.css',
+	allChunks: true
 };
 
 const cleanConfig = {
-	cleanOnceBeforeBuildPatterns: ['dist/*', '!dist/sprite.svg']
+	verbose: false,
+	exclude: ['sprite.svg'],
+	allowExternal: true
 };
 
 module.exports = env => {
@@ -91,32 +94,31 @@ module.exports = env => {
 			rules: [
 				{
 					test: /\.(sa|sc|c)ss$/,
-					use: [
-						{
-							loader: MiniCssExtractPlugin.loader
-						},
-						{
-							loader: 'css-loader',
-							options: sourceMap
-						},
-						{
-							loader: 'postcss-loader',
-							options: { postcssOptions }
-						},
-						{
-							loader: 'sass-loader',
-							options: {
-								sassOptions: {
-									importer: magicImporter()
-								},
-								...sourceMap
+					use: ExtractTextPlugin.extract({
+						use: [
+							{
+								loader: 'css-loader',
+								options: sourceMap
+							},
+							{
+								loader: 'postcss-loader',
+								options: { postcssOptions }
+							},
+							{
+								loader: 'sass-loader',
+								options: {
+									sassOptions: {
+										importer: magicImporter()
+									},
+									...sourceMap
+								}
 							}
-						}
-					]
+						]
+					})
 				}
 			]
 		},
-		plugins: [new MiniCssExtractPlugin(extractTextConfig), new CleanWebpackPlugin(cleanConfig)],
+		plugins: [new ExtractTextPlugin(extractTextConfig), new CleanWebpackPlugin(['../assets/dist/'], cleanConfig)],
 		cache: true,
 		bail: false,
 		devtool: isDevelopment ? 'source-map' : false,

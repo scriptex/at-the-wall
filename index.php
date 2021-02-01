@@ -45,6 +45,8 @@ function print_part($name, $count) {
 	<?php critical_css(); ?>
 
 	<link rel="manifest" href="manifest.json">
+
+	<link rel="stylesheet" href="assets/dist/app.css">
 </head>
 <body>
 	<html-head-component src="./assets/scripts/meta.json" hidden></html-head-component>

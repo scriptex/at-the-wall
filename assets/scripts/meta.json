@@ -23,6 +23,5 @@
 	{ "tag": "meta", "name": "msapplication-wide310x150logo", "content": "favicons/ms-tile-310x150.png" },
 	{ "tag": "meta", "name": "msapplication-square310x310logo", "content": "favicons/ms-tile-310x310.png" },
 	{ "tag": "meta", "name": "msapplication-config", "content": "config.xml" },
-	{ "tag": "meta", "name": "theme-color", "content": "#000000" },
-	{ "tag": "link", "rel": "stylesheet", "href": "assets/dist/app.css" }
+	{ "tag": "meta", "name": "theme-color", "content": "#000000" }
 ]
