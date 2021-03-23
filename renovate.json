@@ -10,5 +10,14 @@
 		"labels": ["security"],
 		"assignees": ["@scriptex"]
 	},
-	"ignoreDeps": ["css-loader"]
+	"packageRules": [
+		{
+			"updateTypes": ["patch", "pin", "digest"],
+			"automerge": true
+		}
+	],
+	"lockFileMaintenance": {
+		"enabled": true,
+		"automerge": true
+	}
 }
