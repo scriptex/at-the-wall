@@ -6,11 +6,13 @@ const { argv } = require('yargs');
 
 const magicImporter = require('node-sass-magic-importer');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const { mode } = argv;
 
 const sourceMap = {
-	sourceMap: argv.env.NODE_ENV === 'development'
+	sourceMap: mode === 'development'
 };
 
 const postcssOptions = {
@@ -53,8 +55,7 @@ const browserSyncConfig = {
 };
 
 const extractTextConfig = {
-	filename: 'dist/app.css',
-	allChunks: true
+	filename: 'dist/app.css'
 };
 
 const cleanConfig = {
@@ -63,9 +64,9 @@ const cleanConfig = {
 	allowExternal: true
 };
 
-module.exports = env => {
-	const isDevelopment = env.NODE_ENV === 'development';
-	const isProduction = env.NODE_ENV === 'production';
+module.exports = () => {
+	const isDevelopment = mode === 'development';
+	const isProduction = mode === 'production';
 
 	if (isProduction) {
 		postcssOptions.plugins.push(require('postcss-merge-rules'), require('cssnano')());
@@ -81,7 +82,7 @@ module.exports = env => {
 	}
 
 	const config = {
-		mode: env.NODE_ENV,
+		mode,
 		entry: ['./assets/styles/main.scss', './assets/scripts/main.js'],
 		output: {
 			path: path.resolve(__dirname, './assets'),
@@ -94,31 +95,35 @@ module.exports = env => {
 			rules: [
 				{
 					test: /\.(sa|sc|c)ss$/,
-					use: ExtractTextPlugin.extract({
-						use: [
-							{
-								loader: 'css-loader',
-								options: sourceMap
-							},
-							{
-								loader: 'postcss-loader',
-								options: { postcssOptions }
-							},
-							{
-								loader: 'sass-loader',
-								options: {
-									sassOptions: {
-										importer: magicImporter()
-									},
-									...sourceMap
-								}
+					use: [
+						{
+							loader: MiniCssExtractPlugin.loader
+						},
+						{
+							loader: 'css-loader',
+							options: sourceMap
+						},
+						{
+							loader: 'postcss-loader',
+							options: { postcssOptions }
+						},
+						{
+							loader: 'sass-loader',
+							options: {
+								sassOptions: {
+									importer: magicImporter()
+								},
+								...sourceMap
 							}
-						]
-					})
+						}
+					]
 				}
 			]
 		},
-		plugins: [new ExtractTextPlugin(extractTextConfig), new CleanWebpackPlugin(['../assets/dist/'], cleanConfig)],
+		plugins: [
+			new MiniCssExtractPlugin(extractTextConfig),
+			new CleanWebpackPlugin(['../assets/dist/'], cleanConfig)
+		],
 		cache: true,
 		bail: false,
 		devtool: isDevelopment ? 'source-map' : false,
@@ -126,9 +131,9 @@ module.exports = env => {
 	};
 
 	if (isDevelopment) {
-		if (env.url) {
-			browserSyncConfig.host = url.parse(env.url).hostname;
-			browserSyncConfig.proxy = env.url;
+		if (argv.url) {
+			browserSyncConfig.host = url.parse(argv.url).hostname;
+			browserSyncConfig.proxy = argv.url;
 		}
 
 		config.plugins.push(
