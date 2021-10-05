@@ -57,7 +57,7 @@
 		"postcss-utilities": "0.8.4",
 		"postcss-watch-folder": "1.1.0",
 		"sass-loader": "12.1.0",
-		"webpack": "5.56.1",
+		"webpack": "5.57.1",
 		"webpack-cli": "4.8.0",
 		"yargs": "17.2.1"
 	},
