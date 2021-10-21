@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 // ----- Snowflakes -----
 
 .snowflake {
@@ -20,9 +22,9 @@
 }
 
 @for $i from 1 through 150 {
-	$size: random(100) / 100 + 0.1;
-	$left: random(100) / 100;
-	$top: random(100) / 100;
+	$size: math.div(random(100), 100) + 0.1;
+	$left: math.div(random(100), 100);
+	$top: math.div(random(100), 100);
 	$delay: random(30);
 
 	.snowflake--#{$i} {
