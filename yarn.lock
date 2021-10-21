@@ -7020,10 +7020,10 @@ schema-utils@^3.1.0:
     ajv "^6.12.5"
     ajv-keywords "^3.5.2"
 
-scriptex-socials@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/scriptex-socials/-/scriptex-socials-1.4.0.tgz#877a66175b5c1a3dec2458dc6a1ecd2d977247ff"
-  integrity sha512-0M9wVPQAg51aRP3tPLURQHHdDHV5gSNYfYAGDCYiHxdM/+TNmveTwAwVVUjpm44JTRj+AFWKlO3oCsEtxTxogg==
+scriptex-socials@1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/scriptex-socials/-/scriptex-socials-1.5.1.tgz#175649389ed712f27794ab0d80a1602f6a0ab58e"
+  integrity sha512-Jo+61B+gdMkdXkGHXQ9ROl7lBwfmcqpJavN1xw2u3RDiQhAEbF2zPIwqC8iR6Vsm3f4DqMShadPwqChom87GMg==
 
 scss-tokenizer@^0.2.3:
   version "0.2.3"
