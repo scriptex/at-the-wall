@@ -33,7 +33,7 @@
 		"scriptex-socials": "1.5.1"
 	},
 	"devDependencies": {
-		"@three11/optisize": "1.3.0",
+		"@three11/optisize": "2.0.0",
 		"autoprefixer": "10.4.0",
 		"browser-sync": "2.27.7",
 		"browser-sync-webpack-plugin": "2.3.0",
