@@ -41,7 +41,7 @@
 		"clean-webpack-plugin": "1.0.1",
 		"create-pwa": "2.4.0",
 		"critical": "4.0.1",
-		"css-loader": "6.6.0",
+		"css-loader": "6.7.0",
 		"cssnano": "5.1.0",
 		"html-minifier": "4.0.0",
 		"mini-css-extract-plugin": "2.6.0",
