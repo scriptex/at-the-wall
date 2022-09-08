@@ -1,1 +1,1 @@
-<div class="sky"></div><!-- /.sky -->
+<div class="sky"></div>

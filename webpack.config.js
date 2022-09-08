@@ -1,41 +1,34 @@
 // @ts-nocheck
 
-const url = require('url');
-const path = require('path');
-const { argv } = require('yargs');
+const { exec } = require('child_process');
+const { parse } = require('url');
+const { resolve } = require('path');
 
 const magicImporter = require('node-sass-magic-importer');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const { mode } = argv;
-
-const sourceMap = {
-	sourceMap: mode === 'development'
-};
-
-const postcssOptions = {
-	plugins: [
-		require('postcss-easy-import'),
-		require('postcss-url')({
-			url: 'rebase'
-		}),
-		require('postcss-normalize')({
-			forceImport: true
-		}),
-		require('postcss-utilities'),
-		require('postcss-flexbugs-fixes'),
-		require('autoprefixer')()
-	],
-	...sourceMap
-};
-
-const browserSyncConfig = {
+const browserSyncConfig = server => ({
 	host: 'localhost',
 	port: 3000,
 	open: 'external',
-	files: ['**/*.php', './assets/dist/app.css'],
+	/* eslint-disable no-mixed-spaces-and-tabs */
+	files: [
+		server
+			? {
+					match: ['*.php'],
+					fn(_, file) {
+						const name = file.replace(/.php$/, '');
+
+						exec(`php ${file} > ${name}.html`);
+					}
+			  }
+			: '**/*.php',
+		'**/*.html',
+		'./assets/dist/app.css',
+		'./assets/dist/app.js'
+	],
+	/* eslint-enable */
 	ghostMode: {
 		clicks: false,
 		scroll: true,
@@ -52,21 +45,39 @@ const browserSyncConfig = {
 		}
 	},
 	proxy: 'localhost'
-};
+});
 
 const extractTextConfig = {
-	filename: 'dist/app.css'
+	filename: 'app.css'
 };
 
-const cleanConfig = {
-	verbose: false,
-	exclude: ['sprite.svg'],
-	allowExternal: true
-};
+module.exports = (env, argv) => {
+	const { url, server } = env;
+	const { mode } = argv;
 
-module.exports = () => {
 	const isDevelopment = mode === 'development';
 	const isProduction = mode === 'production';
+
+	if (server) {
+		exec('php index.php > index.html');
+	}
+
+	const sourceMap = {
+		sourceMap: isDevelopment
+	};
+
+	const postcssOptions = {
+		plugins: [
+			require('postcss-easy-import'),
+			require('postcss-url')({
+				url: 'rebase'
+			}),
+			require('postcss-utilities'),
+			require('postcss-flexbugs-fixes'),
+			require('autoprefixer')()
+		],
+		...sourceMap
+	};
 
 	if (isProduction) {
 		postcssOptions.plugins.push(require('postcss-merge-rules'), require('cssnano')());
@@ -85,11 +96,11 @@ module.exports = () => {
 		mode,
 		entry: ['./assets/styles/main.scss', './assets/scripts/main.js'],
 		output: {
-			path: path.resolve(__dirname, './assets'),
-			filename: 'dist/app.js'
+			path: resolve(__dirname, './assets/dist'),
+			filename: 'app.js'
 		},
 		resolve: {
-			modules: ['node_modules']
+			modules: ['node_modules', './assets/scripts']
 		},
 		module: {
 			rules: [
@@ -120,24 +131,30 @@ module.exports = () => {
 				}
 			]
 		},
-		plugins: [
-			new MiniCssExtractPlugin(extractTextConfig),
-			new CleanWebpackPlugin(['../assets/dist/'], cleanConfig)
-		],
+		plugins: [new MiniCssExtractPlugin(extractTextConfig)],
 		cache: true,
 		bail: false,
 		devtool: isDevelopment ? 'source-map' : false,
 		stats: 'errors-only'
 	};
 
+	const bsConfig = browserSyncConfig(server);
+
 	if (isDevelopment) {
-		if (argv.url) {
-			browserSyncConfig.host = url.parse(argv.url).hostname;
-			browserSyncConfig.proxy = argv.url;
+		if (url) {
+			bsConfig.host = parse(url).hostname;
+			bsConfig.proxy = url;
+		}
+
+		if (server) {
+			delete bsConfig.host;
+			delete bsConfig.proxy;
+
+			bsConfig.server = true;
 		}
 
 		config.plugins.push(
-			new BrowserSyncPlugin(browserSyncConfig, {
+			new BrowserSyncPlugin(bsConfig, {
 				reload: false
 			})
 		);

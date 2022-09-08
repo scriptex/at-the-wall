@@ -1,139 +1,139 @@
 <div class="white-walker">
 	<div class="head">
-		<div class="head__inner"></div><!-- /.head__inner -->
+		<div class="head__inner"></div>
 
-		<div class="ear__left"></div><!-- /.ear__left -->
+		<div class="ear__left"></div>
 
-		<div class="ear__right"></div><!-- /.ear__right -->
+		<div class="ear__right"></div>
 
-		<div class="horns horns--left"></div><!-- /.horns -->
+		<div class="horns horns--left"></div>
 
-		<div class="horns horns--right"></div><!-- /.horns -->
+		<div class="horns horns--right"></div>
 
-		<div class="middle-horns middle-horns--left"></div><!-- /.middle-horns -->
+		<div class="middle-horns middle-horns--left"></div>
 
-		<div class="middle-horns middle-horns--right"></div><!-- /.middle-horns -->
+		<div class="middle-horns middle-horns--right"></div>
 
-		<div class="eyebrow eyebrow--left"></div><!-- /.eyebrow eyebrow-/-left -->
+		<div class="eyebrow eyebrow--left"></div>
 
-		<div class="eyebrow eyebrow--right"></div><!-- /.eyebrow eyebrow-/-right -->
+		<div class="eyebrow eyebrow--right"></div>
 
 		<div class="eye eye--left">
-			<div class="eyelid"></div><!-- /.eyelid -->
-		</div><!-- /.eye eye-/-left -->
+			<div class="eyelid"></div>
+		</div>
 
 		<div class="eye eye--right">
-			<div class="eyelid"></div><!-- /.eyelid -->
-		</div><!-- /.eye eye-/-right -->
+			<div class="eyelid"></div>
+		</div>
 
-		<div class="cheek-left"></div><!-- /.cheek-left -->
+		<div class="cheek-left"></div>
 
-		<div class="cheek-right"></div><!-- /.cheek-right -->
+		<div class="cheek-right"></div>
 
 		<div class="nose">
 			<div class="nose__upper">
-				<div class="nose__upper-left"></div><!-- /.nose__upper-left -->
+				<div class="nose__upper-left"></div>
 
-				<div class="nose__upper-right"></div><!-- /.nose__upper-right -->
-			</div><!-- /.nose__upper -->
+				<div class="nose__upper-right"></div>
+			</div>
 
-			<div class="nostril--left"></div><!-- /.nostril-/-left -->
+			<div class="nostril--left"></div>
 
-			<div class="nostril--right"></div><!-- /.nostril-/-right -->
-		</div><!-- /.nose -->
+			<div class="nostril--right"></div>
+		</div>
 
 		<div class="mouth">
-			<div class="mustache mustache--left"></div><!-- /.mustache -->
+			<div class="mustache mustache--left"></div>
 
-			<div class="mustache mustache--right"></div><!-- /.mustache -->
-		</div><!-- /.mouth -->
+			<div class="mustache mustache--right"></div>
+		</div>
 
 		<div class="chin">
-			<div class="chin__inner"></div><!-- /.chin__inner -->
-		</div><!-- /.chin -->
+			<div class="chin__inner"></div>
+		</div>
 
-		<div class="dimples dimples--left"></div><!-- /.dimples -->
+		<div class="dimples dimples--left"></div>
 
-		<div class="dimples dimples--right"></div><!-- /.dimples -->
+		<div class="dimples dimples--right"></div>
 
 		<div class="large-horns large-horns--left">
-			<div class="large-horns__inner"></div><!-- /.large-horns__inner -->
+			<div class="large-horns__inner"></div>
 
-			<div class="large-horns__shape"></div><!-- /.large-horns__shape -->
-		</div><!-- /.large-horns large-horns-/-left -->
+			<div class="large-horns__shape"></div>
+		</div>
 
 		<div class="large-horns large-horns--right">
-			<div class="large-horns__inner"></div><!-- /.large-horns__inner -->
+			<div class="large-horns__inner"></div>
 
-			<div class="large-horns__shape"></div><!-- /.large-horns__shape -->
-		</div><!-- /.large-horns large-horns-/-right -->
-	</div><!-- /.head -->
+			<div class="large-horns__shape"></div>
+		</div>
+	</div>
 
 	<div class="body">
 		<div class="body-inner">
 			<div class="torso">
-				<div class="torso__top"></div><!-- /.torso__top -->
+				<div class="torso__top"></div>
 
-				<div class="torso__bottom"></div><!-- /.torso__bottom -->
+				<div class="torso__bottom"></div>
 
-				<div class="torso__band torso__band-top"></div><!-- /.torso__band torso__band-top -->
+				<div class="torso__band torso__band-top"></div>
 
-				<div class="torso__band torso__band-bottom"></div><!-- /.torso__band torso__band-bottom -->
+				<div class="torso__band torso__band-bottom"></div>
 
 				<div class="tie">
-					<div class="tie__back"></div><!-- /.tie__back -->
+					<div class="tie__back"></div>
 
-					<div class="tie__front"></div><!-- /.tie__front -->
-				</div><!-- /.tie -->
-			</div><!-- /.torso -->
+					<div class="tie__front"></div>
+				</div>
+			</div>
 
 			<div class="leg leg--left">
-				<div class="foot"></div><!-- /.foot -->
-			</div><!-- /.leg leg-/-left -->
+				<div class="foot"></div>
+			</div>
 
 			<div class="leg leg--right">
-				<div class="foot"></div><!-- /.foot -->
-			</div><!-- /.leg leg-/-right -->
+				<div class="foot"></div>
+			</div>
 
 			<div class="hand hand--left">
-				<div class="paw"></div><!-- /.paw -->
+				<div class="paw"></div>
 
-				<div class="hand__armor"></div><!-- /.hand__armor -->
-			</div><!-- /.hand hand-/-left -->
+				<div class="hand__armor"></div>
+			</div>
 
 			<div class="shoulder shoulder--left">
 				<div class="shoulder__grid">
 					<?php print_grid_items(36); ?>
-				</div><!-- /.shoulder__grid -->
-			</div><!-- /.shoulder shoulder-/-left -->
+				</div>
+			</div>
 
 			<div class="shoulder shoulder--right">
 				<div class="shoulder__grid">
 					<?php print_grid_items(36); ?>
-				</div><!-- /.shoulder__grid -->
-			</div><!-- /.shoulder shoulder-/-right -->
-		</div><!-- /.body-inner -->
+				</div>
+			</div>
+		</div>
 
 		<div class="movable">
 			<div class="hand hand--right">
-				<div class="paw"></div><!-- /.paw -->
-			</div><!-- /.hand hand-/-right -->
+				<div class="paw"></div>
+			</div>
 
 			<div class="sword">
-				<div class="sword__bottom"></div><!-- /.sword__bottom -->
+				<div class="sword__bottom"></div>
 
 				<div class="sword__blade">
-					<div class="sword__blade-bottom"></div><!-- /.sword__blade-bottom -->
+					<div class="sword__blade-bottom"></div>
 
 					<div class="sword__blade-top">
-						<div class="sword__blade-top--left"></div><!-- /.sword__blade-top-/-left -->
+						<div class="sword__blade-top--left"></div>
 
-						<div class="sword__blade-top--right"></div><!-- /.sword__blade-top-/-right -->
-						
-						<div class="sword__blade-top--middle"></div><!-- /.sword__blade-top-/-middle -->
-					</div><!-- /.sword__blade-top -->
-				</div><!-- /.sword__blade -->
-			</div><!-- /.sword -->
-		</div><!-- /.movable -->
-	</div><!-- /.body -->
-</div><!-- /.white-walker -->
+						<div class="sword__blade-top--right"></div>
+
+						<div class="sword__blade-top--middle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
