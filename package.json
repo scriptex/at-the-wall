@@ -2,6 +2,26 @@
 	"name": "at-the-wall",
 	"version": "1.0.0",
 	"description": "A Game of Thrones scene coded in HTML and CSS",
+	"keywords": [
+		"GoT",
+		"Game of Thrones",
+		"Jon Snow",
+		"White Walker",
+		"Pure CSS",
+		"CSS drawing"
+	],
+	"homepage": "https://at-the-wall.atanas.info/",
+	"bugs": {
+		"url": "https://github.com/scriptex/at-the-wall/issues",
+		"email": "hi@atanas.info"
+	},
+	"license": "MIT",
+	"author": "Atanas Atanasov <hi@atanas.info> (https://atanas.info)",
+	"funding": "https://github.com/sponsors/scriptex",
+	"repository": {
+		"type": "git",
+		"url": "github:scriptex/at-the-wall"
+	},
 	"scripts": {
 		"build": "webpack --mode=production",
 		"start": "webpack --watch --mode=development",
@@ -13,21 +33,6 @@
 		"pwa": "create-pwa --icon=\"./assets/images/favicon/icon.png\" --launch=\"./assets/images/favicon/launch.png\"",
 		"prod": "yarn rm-html && yarn html && yarn html-min && yarn build && yarn critical"
 	},
-	"keywords": [
-		"GoT",
-		"Game of Thrones",
-		"Jon Snow",
-		"White Walker",
-		"Pure CSS",
-		"CSS drawing"
-	],
-	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
-	"repository": "https://github.com/scriptex/at-the-wall",
-	"bugs": {
-		"url": "https://github.com/scriptex/at-the-wall/issues",
-		"email": "scriptex.bg@gmail.com"
-	},
-	"license": "MIT",
 	"dependencies": {
 		"html-head-component": "1.1.0",
 		"scriptex-socials": "1.6.0"
@@ -38,9 +43,8 @@
 		"browser-sync": "2.27.10",
 		"browser-sync-webpack-plugin": "2.3.0",
 		"browserslist": "4.21.3",
-		"clean-webpack-plugin": "1.0.1",
 		"create-pwa": "2.5.0",
-		"critical": "4.0.1",
+		"critical": "5.0.1",
 		"css-loader": "6.7.1",
 		"cssnano": "5.1.13",
 		"html-minifier": "4.0.0",
@@ -61,10 +65,9 @@
 		"webpack-cli": "4.10.0",
 		"yargs": "17.5.1"
 	},
+	"private": true,
 	"browserslist": [
 		"> 1%",
 		"last 2 versions"
-	],
-	"main": "assets/styles/main.scss",
-	"private": true
+	]
 }
