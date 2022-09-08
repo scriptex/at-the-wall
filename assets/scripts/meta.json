@@ -16,12 +16,12 @@
 	{ "tag": "link", "rel": "icon", "type": "image/png", "href": "favicons/favicon-128.png", "sizes": "128x128" },
 	{ "tag": "link", "rel": "shortcut icon", "type": "image/x-icon", "href": "favicons/favicon.ico" },
 	{ "tag": "meta", "name": "application-name", "content": "At the Wall" },
-	{ "tag": "meta", "name": "msapplication-TileColor", "content": "#000000" },
+	{ "tag": "meta", "name": "msapplication-TileColor", "content": "#3d6b7a" },
 	{ "tag": "meta", "name": "msapplication-TileImage", "content": "favicons/ms-tile-144x144.png" },
 	{ "tag": "meta", "name": "msapplication-square70x70logo", "content": "favicons/ms-tile-70x70.png" },
 	{ "tag": "meta", "name": "msapplication-square150x150logo", "content": "favicons/ms-tile-150x150.png" },
 	{ "tag": "meta", "name": "msapplication-wide310x150logo", "content": "favicons/ms-tile-310x150.png" },
 	{ "tag": "meta", "name": "msapplication-square310x310logo", "content": "favicons/ms-tile-310x310.png" },
 	{ "tag": "meta", "name": "msapplication-config", "content": "config.xml" },
-	{ "tag": "meta", "name": "theme-color", "content": "#000000" }
+	{ "tag": "meta", "name": "theme-color", "content": "#3d6b7a" }
 ]
