@@ -34,7 +34,7 @@
 		"prod": "yarn rm-html && yarn html && yarn html-min && yarn build && yarn critical"
 	},
 	"dependencies": {
-		"html-head-component": "1.2.0",
+		"html-head-component": "1.2.1",
 		"scriptex-socials": "1.7.0"
 	},
 	"devDependencies": {
