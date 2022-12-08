@@ -6,13 +6,6 @@ CACHE:
 # See below for example
 # on how to add files to cache:
 
-# App files
-index.html
-manifest.json
-at-the-wall.appcache
-service-worker.js
-assets/dist/app.css
-
 # Favicons
 favicons/apple-touch-icon-57x57.png
 favicons/apple-touch-icon-60x60.png
@@ -27,11 +20,11 @@ favicons/favicon-32x32.png
 favicons/favicon-96x96.png
 favicons/favicon-128x128.png
 favicons/favicon-196x196.png
-favicons/mstile-70x70.png
-favicons/mstile-144x144.png
-favicons/mstile-150x150.png
-favicons/mstile-310x150.png
-favicons/mstile-310x310.png
+favicons/ms-tile-70x70.png
+favicons/ms-tile-144x144.png
+favicons/ms-tile-150x150.png
+favicons/ms-tile-310x150.png
+favicons/ms-tile-310x310.png
 favicons/favicon.ico
 
 # App Icons
