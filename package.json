@@ -40,7 +40,7 @@
 	"devDependencies": {
 		"@three11/optisize": "3.0.1",
 		"autoprefixer": "10.4.14",
-		"browser-sync": "2.29.2",
+		"browser-sync": "2.29.3",
 		"browser-sync-webpack-plugin": "2.3.0",
 		"browserslist": "4.21.5",
 		"create-pwa": "2.7.0",
