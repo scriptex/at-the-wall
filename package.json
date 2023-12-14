@@ -46,7 +46,7 @@
 		"create-pwa": "2.7.0",
 		"critical": "6.0.4",
 		"css-loader": "6.8.1",
-		"cssnano": "6.0.1",
+		"cssnano": "6.0.2",
 		"html-minifier": "4.0.0",
 		"mini-css-extract-plugin": "2.7.6",
 		"node-sass-magic-importer": "5.3.3",
