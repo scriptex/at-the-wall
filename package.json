@@ -50,7 +50,7 @@
 		"html-minifier": "4.0.0",
 		"mini-css-extract-plugin": "2.7.6",
 		"node-sass-magic-importer": "5.3.3",
-		"postcss": "8.4.32",
+		"postcss": "8.4.33",
 		"postcss-easy-import": "4.0.0",
 		"postcss-flexbugs-fixes": "5.0.2",
 		"postcss-loader": "7.3.4",
