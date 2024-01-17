@@ -39,7 +39,7 @@
 	},
 	"devDependencies": {
 		"@three11/optisize": "3.0.1",
-		"autoprefixer": "10.4.16",
+		"autoprefixer": "10.4.17",
 		"browser-sync": "3.0.2",
 		"browser-sync-webpack-plugin": "2.3.0",
 		"browserslist": "4.22.2",
