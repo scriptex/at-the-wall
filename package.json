@@ -44,7 +44,7 @@
 		"browser-sync-webpack-plugin": "2.3.0",
 		"browserslist": "4.22.3",
 		"create-pwa": "2.7.0",
-		"critical": "7.0.0",
+		"critical": "7.1.0",
 		"css-loader": "6.9.1",
 		"cssnano": "6.0.3",
 		"html-minifier": "4.0.0",
