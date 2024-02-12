@@ -47,6 +47,21 @@ function print_part($name, $count) {
 	<link rel="manifest" href="manifest.json">
 
 	<link rel="stylesheet" href="assets/dist/app.css">
+
+	<script>
+    (function(d, h, m){
+        var js, fjs = d.getElementsByTagName(h)[0];
+        if (d.getElementById(m)){return;}
+        js = d.createElement(h); js.id = m;
+        js.onload = function(){
+            window.makerWidgetComInit({
+            position: "left",          
+            widget: "egtvfprlpcdjg1i4-8syknhxgseddkfli-j45otk13qspl7fts"                
+        })};
+        js.src = "https://makerwidget.com/js/embed.js";
+        fjs.parentNode.insertBefore(js, fjs)
+    }(document, "script", "dhm"))
+</script>
 </head>
 <body>
 	<html-head-component src="./assets/scripts/meta.json" hidden></html-head-component>
