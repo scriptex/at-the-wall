@@ -45,7 +45,7 @@
 		"browserslist": "4.23.0",
 		"create-pwa": "2.7.0",
 		"critical": "7.1.1",
-		"css-loader": "6.10.0",
+		"css-loader": "6.11.0",
 		"cssnano": "6.1.2",
 		"html-minifier": "4.0.0",
 		"mini-css-extract-plugin": "2.8.1",
