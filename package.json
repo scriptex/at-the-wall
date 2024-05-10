@@ -35,7 +35,7 @@
 	},
 	"dependencies": {
 		"html-head-component": "1.2.1",
-		"scriptex-socials": "1.7.0"
+		"scriptex-socials": "1.8.0"
 	},
 	"devDependencies": {
 		"@three11/optisize": "3.0.1",
