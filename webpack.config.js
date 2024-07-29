@@ -121,6 +121,7 @@ module.exports = (env, argv) => {
 						{
 							loader: 'sass-loader',
 							options: {
+								api: 'legacy',
 								sassOptions: {
 									importer: magicImporter()
 								},
