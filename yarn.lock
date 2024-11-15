@@ -3137,10 +3137,10 @@ immutable@^3:
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
   integrity sha512-15gZoQ38eYjEjxkorfbcgBKBL6R7T459OuK+CpcWt7O3KF4uPCx2tD0uFETlUDIyo+1789crbMhTvQBSR5yBMg==
 
-immutable@^4.0.0:
-  version "4.3.7"
-  resolved "https://registry.yarnpkg.com/immutable/-/immutable-4.3.7.tgz#c70145fc90d89fb02021e65c84eb0226e4e5a381"
-  integrity sha512-1hqclzwYwjRDFLjcFxOM5AYkkG0rpFPpr1RLPMEuGczoS7YA8gLhy8SWXYRAA/XwfEHpfo3cw5JGioS32fnMRw==
+immutable@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-5.0.2.tgz#bb8a987349a73efbe6b3b292a9cbaf1b530d296b"
+  integrity sha512-1NU7hWZDkV7hJ4PJ9dur9gTNQ4ePNPN4k9/0YhwjzykTi/+3Q5pF93YU5QoVj8BuOnhLgaY8gs0U2pj4kSYVcw==
 
 import-fresh@^3.2.1, import-fresh@^3.3.0:
   version "3.3.0"
@@ -4421,6 +4421,11 @@ picocolors@^1.1.0:
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.1.0.tgz#5358b76a78cde483ba5cef6a9dc9671440b27d59"
   integrity sha512-TQ92mBOW0l3LeMeyLV6mzy/kWr8lkd/hp3mTg7wYK7zJhuBStmGMBG0BdeDZS/dZx1IukaX6Bk11zcln25o1Aw==
 
+picocolors@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.1.1.tgz#3d321af3eab939b083c8f929a1d12cda81c26b6b"
+  integrity sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==
+
 picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
@@ -4846,13 +4851,13 @@ postcss-watch-folder@2.0.0:
   resolved "https://registry.yarnpkg.com/postcss-watch-folder/-/postcss-watch-folder-2.0.0.tgz#0f0b22da8add6cc626be2fd86d099cc7c970b75f"
   integrity sha512-afXH6ow2TFIyCKmQiTjCbjzLOpc1cN4Tsr5J5hctLyQYfIo05pVIiADoKWOaHU8k3Axx/smL6x99Y4dDQyx7fA==
 
-postcss@8.4.47, postcss@^8.4.47:
-  version "8.4.47"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.47.tgz#5bf6c9a010f3e724c503bf03ef7947dcb0fea365"
-  integrity sha512-56rxCq7G/XfB4EkXq9Egn5GCqugWvDFjafDOThIdMBsI15iqPqR5r15TfSr1YPYeEI19YeaXMCbY6u88Y76GLQ==
+postcss@8.4.49:
+  version "8.4.49"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.49.tgz#4ea479048ab059ab3ae61d082190fabfd994fe19"
+  integrity sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==
   dependencies:
     nanoid "^3.3.7"
-    picocolors "^1.1.0"
+    picocolors "^1.1.1"
     source-map-js "^1.2.1"
 
 postcss@^6.0.14:
@@ -4880,6 +4885,15 @@ postcss@^8.2.7, postcss@^8.3.0, postcss@^8.4.33, postcss@^8.4.38:
     nanoid "^3.3.7"
     picocolors "^1.0.1"
     source-map-js "^1.2.0"
+
+postcss@^8.4.47:
+  version "8.4.47"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.47.tgz#5bf6c9a010f3e724c503bf03ef7947dcb0fea365"
+  integrity sha512-56rxCq7G/XfB4EkXq9Egn5GCqugWvDFjafDOThIdMBsI15iqPqR5r15TfSr1YPYeEI19YeaXMCbY6u88Y76GLQ==
+  dependencies:
+    nanoid "^3.3.7"
+    picocolors "^1.1.0"
+    source-map-js "^1.2.1"
 
 prebuild-install@^7.1.1:
   version "7.1.2"
@@ -5295,15 +5309,16 @@ sass-loader@16.0.3:
   dependencies:
     neo-async "^2.6.2"
 
-sass@1.80.5:
-  version "1.80.5"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.80.5.tgz#0ba965223d44df22497f2966b498cf5c453fae8f"
-  integrity sha512-TQd2aoQl/+zsxRMEDSxVdpPIqeq9UFc6pr7PzkugiTx3VYCFPUaa3P4RrBQsqok4PO200Vkz0vXQBNlg7W907g==
+sass@1.80.7:
+  version "1.80.7"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.80.7.tgz#7569334c39220f8ca62fcea38dce60f809ba345c"
+  integrity sha512-MVWvN0u5meytrSjsU7AWsbhoXi1sc58zADXFllfZzbsBT1GHjjar6JwBINYPRrkx/zqnQ6uqbQuHgE95O+C+eQ==
   dependencies:
-    "@parcel/watcher" "^2.4.1"
     chokidar "^4.0.0"
-    immutable "^4.0.0"
+    immutable "^5.0.2"
     source-map-js ">=0.6.2 <2.0.0"
+  optionalDependencies:
+    "@parcel/watcher" "^2.4.1"
 
 saxes@^6.0.0:
   version "6.0.0"
