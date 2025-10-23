@@ -60,7 +60,7 @@
 		"postcss-utilities": "0.8.4",
 		"postcss-watch-folder": "2.0.0",
 		"sass": "1.93.2",
-		"sass-loader": "16.0.5",
+		"sass-loader": "16.0.6",
 		"webpack": "5.102.1",
 		"webpack-cli": "6.0.1",
 		"yargs": "18.0.0"
