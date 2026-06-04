@@ -4,7 +4,6 @@ const { exec } = require('child_process');
 const { parse } = require('url');
 const { resolve } = require('path');
 
-const magicImporter = require('node-sass-magic-importer');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -22,7 +21,7 @@ const browserSyncConfig = server => ({
 
 						exec(`php ${file} > ${name}.html`);
 					}
-			  }
+				}
 			: '**/*.php',
 		'**/*.html',
 		'./assets/dist/app.css',
@@ -121,10 +120,7 @@ module.exports = (env, argv) => {
 						{
 							loader: 'sass-loader',
 							options: {
-								api: 'legacy',
-								sassOptions: {
-									importer: magicImporter()
-								},
+								api: 'auto',
 								...sourceMap
 							}
 						}
