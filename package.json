@@ -58,11 +58,11 @@
 		"postcss-url": "10.1.4",
 		"postcss-utilities": "0.8.4",
 		"postcss-watch-folder": "2.0.0",
-		"sass": "1.101.7",
+		"sass": "1.102.0",
 		"sass-loader": "17.0.0",
 		"webpack": "5.109.2",
 		"webpack-cli": "7.2.2",
-		"yargs": "18.0.0"
+		"yargs": "18.1.0"
 	},
 	"private": true,
 	"browserslist": [
