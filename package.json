@@ -47,7 +47,7 @@
 		"critical": "9.0.0",
 		"css-loader": "7.1.5",
 		"cssnano": "9.9.0",
-		"html-minifier": "4.0.0",
+		"html-minifier": "5.0.1",
 		"mini-css-extract-plugin": "2.10.2",
 		"postcss": "8.5.32",
 		"postcss-easy-import": "4.0.0",
