@@ -1086,6 +1086,11 @@ commander@^15.0.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-15.0.0.tgz#96f3961f12adac1799ef3fbd8bc61d40572d1b11"
   integrity sha512-z67u4ZhzCL/Tydu1lJARtEZYWbWaN7oYLHbsuzocr6y4N6WZAagG3RQ4FW61V1/0+jImpj293XfrcYnd1qxtPg==
 
+commander@^15.1.0:
+  version "15.1.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-15.1.0.tgz#397e6a353fda8e9d4e1eb9e3c0c28644cfd69406"
+  integrity sha512-cgnQ88TRrWcC7pVq46RzJVRMktu3W2RcbnoidnfBsl1bmDCBwJS/udcIZpKoCrbAYYaCqsz1yZCVIgbIaU3ddQ==
+
 commander@^2.2.0, commander@^2.20.0, commander@^2.8.1:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
@@ -2400,12 +2405,12 @@ html-head-component@1.2.1:
   resolved "https://registry.yarnpkg.com/html-head-component/-/html-head-component-1.2.1.tgz#dfd7e07f1de751c40ffb63aefce86bf0fab427d7"
   integrity sha512-d4bPkHM36cROtl7QyCnM5QADF6uZ5rz6KqcokAlvhupmQEq8PscuZMXhUZg5Orj1qxDwIuDOOR4oqrTUN6dpEA==
 
-html-minifier@5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-5.0.1.tgz#b3d66af75c7bfc047d7696a91ced0f059999ddc1"
-  integrity sha512-5jfRbLfDIpk1Oi+n6gJuBgDuHMxxyGG+gQP01rTrKdxqVQ7lGhSNkOMj3I65M/7Ce4qQM+hiu1iYQQ40I4+ALw==
+html-minifier@5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-5.0.2.tgz#1949240e9d4041ec955164cd8d15301ad2d2628b"
+  integrity sha512-jAJvVVNPtRIPb5dG+ZtnXBY0D0K9sV9GBC6qQ12jUdzJkAGWv4JSOGPFg8+5jDTt0PyORMFKTBlVrAO7zaFjog==
   dependencies:
-    commander "^15.0.0"
+    commander "^15.1.0"
     entities "^9.0.0"
     lightningcss "^1.33.0"
     svgo "^4.1.0"
