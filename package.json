@@ -39,7 +39,7 @@
 	},
 	"devDependencies": {
 		"@three11/optisize": "3.0.1",
-		"autoprefixer": "10.6.2",
+		"autoprefixer": "10.7.0",
 		"browser-sync": "3.0.4",
 		"browser-sync-webpack-plugin": "2.4.0",
 		"browserslist": "4.29.6",
@@ -47,7 +47,7 @@
 		"critical": "9.0.0",
 		"css-loader": "7.1.5",
 		"cssnano": "9.9.0",
-		"html-minifier": "5.0.4",
+		"html-minifier": "5.4.1",
 		"mini-css-extract-plugin": "2.10.2",
 		"postcss": "8.5.33",
 		"postcss-easy-import": "4.0.0",
@@ -60,7 +60,7 @@
 		"postcss-watch-folder": "2.0.0",
 		"sass": "1.108.2",
 		"sass-loader": "17.1.1",
-		"webpack": "5.112.2",
+		"webpack": "5.113.0",
 		"webpack-cli": "7.3.1",
 		"yargs": "18.2.0"
 	},
